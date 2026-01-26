@@ -33,7 +33,7 @@ const App: React.FC = () => {
 
   const [settings, setSettings] = useState<AppSettings>(DEFAULT_SETTINGS);
   const [language, setLanguage] = useState<Language>('zh'); 
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   // --- Context Menu & Edit State ---
   const [contextMenu, setContextMenu] = useState<{ x: number, y: number, cardId: string } | null>(null);
@@ -243,7 +243,7 @@ const App: React.FC = () => {
            
            if (currentLen > allowedLen) {
               // Generate replacement reusing position properties
-              const usedIds = new Set(cards.map(c => String(c.sourceId || '')));
+              const usedIds = new Set<string>(cards.map(c => String(c.sourceId || '')));
               const quote = getRandomQuote(usedIds, newLimit, language);
               const text = language === 'en' ? quote.content_en : quote.content_cn;
               
@@ -405,7 +405,7 @@ const App: React.FC = () => {
             const indexToReplace = farthestIndex !== -1 ? farthestIndex : Math.floor(Math.random() * currentCards.length);
             const oldCard = currentCards[indexToReplace];
 
-            const currentSourceIds = new Set(currentCards.map(c => String(c.sourceId || '')));
+            const currentSourceIds = new Set<string>(currentCards.map(c => String(c.sourceId || '')));
             // Use current length setting for new cards
             const newQuote = getRandomQuote(currentSourceIds, settings.maxTextLength, language);
 
