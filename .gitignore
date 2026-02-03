@@ -10,9 +10,13 @@ flask_venv/
 
 
 # 一些关键文件！！
-*.json
+# *.json  # 注释掉，太宽泛会忽略必要的配置文件
 .env
 .env.local
+
+# 只忽略特定的 JSON 文件（如果需要）
+# metadata.json
+# hanfeizi_quotes_detailed.json
 
 *.pyc
 *.pyw
