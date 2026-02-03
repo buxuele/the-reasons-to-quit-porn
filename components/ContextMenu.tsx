@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Trash2, Pencil } from 'lucide-react';
+import { Trash2, Pencil, Sparkles } from 'lucide-react';
 import { Language } from '../types';
 import { TRANSLATIONS } from '../constants';
 
@@ -9,10 +9,11 @@ interface ContextMenuProps {
   language: Language;
   onEdit: () => void;
   onDelete: () => void;
+  onAIAnalyze: () => void;
   onClose: () => void;
 }
 
-const ContextMenu: React.FC<ContextMenuProps> = ({ x, y, language, onEdit, onDelete, onClose }) => {
+const ContextMenu: React.FC<ContextMenuProps> = ({ x, y, language, onEdit, onDelete, onAIAnalyze, onClose }) => {
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -43,6 +44,16 @@ const ContextMenu: React.FC<ContextMenuProps> = ({ x, y, language, onEdit, onDel
       style={{ top: y, left: x }}
     >
       <div className="p-1">
+        <button 
+          onClick={(e) => {
+            e.stopPropagation();
+            onAIAnalyze();
+          }}
+          className="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm font-medium text-purple-600 dark:text-purple-400 hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors text-left group"
+        >
+          <Sparkles size={16} className="group-hover:scale-110 transition-transform" />
+          {language === 'zh' ? 'AI 解读' : 'AI Analysis'}
+        </button>
         <button 
           onClick={(e) => {
             e.stopPropagation();

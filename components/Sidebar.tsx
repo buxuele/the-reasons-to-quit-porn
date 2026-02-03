@@ -1,8 +1,9 @@
 
 import React, { useState } from 'react';
 import { X, SlidersHorizontal, PlusCircle, Save, Globe, RotateCcw } from 'lucide-react';
-import { AppSettings, CardColor, Language } from '../types';
+import { AppSettings, CardColor, Language, ThemeType } from '../types';
 import { COLOR_DOT_MAP, TRANSLATIONS } from '../constants';
+import { THEME_NAMES } from '../data-themes';
 
 interface SidebarProps {
   settings: AppSettings;
@@ -99,6 +100,27 @@ const Sidebar: React.FC<SidebarProps> = ({
             >
                 <X size={18} />
             </button>
+        </div>
+      </div>
+
+      {/* Theme Selector */}
+      <div className="px-8 py-4 border-b border-gray-200 dark:border-white/10 bg-white/30 dark:bg-white/5">
+        <div className="flex gap-2">
+          {(['quit-porn', 'reading', 'quotes'] as ThemeType[]).map((theme) => (
+            <button
+              key={theme}
+              onClick={() => onUpdateSettings('theme', theme)}
+              className={`
+                flex-1 py-2 px-3 rounded-lg text-sm font-medium transition-all
+                ${settings.theme === theme 
+                  ? 'bg-primary text-white shadow-md shadow-primary/25' 
+                  : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
+                }
+              `}
+            >
+              {THEME_NAMES[theme][language]}
+            </button>
+          ))}
         </div>
       </div>
 

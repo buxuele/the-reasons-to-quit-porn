@@ -7,8 +7,10 @@ import Sidebar from './components/Sidebar';
 import Toolbar from './components/Toolbar';
 import ContextMenu from './components/ContextMenu';
 import EditModal from './components/EditModal';
-import { SOURCE_DATA, QuoteItem } from './data';
+import ArticleModal from './components/ArticleModal';
+import { getThemeData, ThemeData } from './data-themes';
 import { AppSettings, CardData, CardColor, Language } from './types';
+import { generateArticle, saveArticleToFile } from './utils/groq';
 
 // Simple UUID generator
 const generateId = () => Math.random().toString(36).substr(2, 9);
@@ -20,6 +22,7 @@ const DEFAULT_SETTINGS: AppSettings = {
   showGrid: true,
   isPaused: false,
   maxTextLength: 60, // Default character limit (CN base)
+  theme: 'quit-porn', // Default theme
 };
 
 const App: React.FC = () => {
@@ -38,6 +41,14 @@ const App: React.FC = () => {
   // --- Context Menu & Edit State ---
   const [contextMenu, setContextMenu] = useState<{ x: number, y: number, cardId: string } | null>(null);
   const [editingCardId, setEditingCardId] = useState<string | null>(null);
+  
+  const [articleModal, setArticleModal] = useState<{ isOpen: boolean, cardText: string, cardText2?: string, article: string, isLoading: boolean }>({
+    isOpen: false,
+    cardText: '',
+    cardText2: '',
+    article: '',
+    isLoading: false,
+  });
 
   // --- Rotation Logic ---
   const rotation = useMotionValue(0);
@@ -126,42 +137,44 @@ const App: React.FC = () => {
   // --- Random Data Helpers ---
 
   // Pick a random quote avoiding duplicates and respecting length
-  const getRandomQuote = (excludeIds: Set<string>, maxLength: number, lang: Language): QuoteItem => {
-    // English allows more chars roughly 2.5x
+  const getRandomQuote = (excludeIds: Set<string>, maxLength: number, lang: Language, theme: ThemeType): ThemeData => {
+    const SOURCE_DATA = getThemeData(theme);
+    
+    // For two-line cards, check combined length
     const limit = lang === 'en' ? maxLength * 2.5 : maxLength;
 
     // 1. Try to find unused items that fit length
     let candidates = SOURCE_DATA.filter(item => {
         if (excludeIds.has(String(item.id))) return false;
-        const content = lang === 'en' ? item.content_en : item.content_cn;
-        return content.length <= limit;
+        const totalLength = item.text.length + (item.text2?.length || 0);
+        return totalLength <= limit;
     });
 
     // 2. If nothing fits/unused, allow reused items that fit length
     if (candidates.length === 0) {
         candidates = SOURCE_DATA.filter(item => {
-            const content = lang === 'en' ? item.content_en : item.content_cn;
-            return content.length <= limit;
+            const totalLength = item.text.length + (item.text2?.length || 0);
+            return totalLength <= limit;
         });
     }
 
     // 3. If STILL nothing fits (limit too strict), fallback to shortest available items
     if (candidates.length === 0) {
         const sorted = [...SOURCE_DATA].sort((a, b) => {
-             const lenA = lang === 'en' ? a.content_en.length : a.content_cn.length;
-             const lenB = lang === 'en' ? b.content_en.length : b.content_cn.length;
+             const lenA = a.text.length + (a.text2?.length || 0);
+             const lenB = b.text.length + (b.text2?.length || 0);
              return lenA - lenB;
         });
         // Return random from the top 5 shortest to add variety even in fail case
-        const top5 = sorted.slice(0, 5);
+        const top5 = sorted.slice(0, Math.min(5, sorted.length));
         return top5[Math.floor(Math.random() * top5.length)];
     }
 
     return candidates[Math.floor(Math.random() * candidates.length)];
   };
 
-  const generateRandomCard = (existingIds: Set<string>, maxLength: number, lang: Language): CardData => {
-    const quote = getRandomQuote(existingIds, maxLength, lang);
+  const generateRandomCard = (existingIds: Set<string>, maxLength: number, lang: Language, theme: ThemeType): CardData => {
+    const quote = getRandomQuote(existingIds, maxLength, lang, theme);
     const angle = Math.random() * 360;
     const height = (Math.random() - 0.5) * 60;
     const colors = Object.values(CardColor).filter(c => c !== CardColor.Glass);
@@ -170,7 +183,8 @@ const App: React.FC = () => {
     return {
       id: generateId(),
       sourceId: quote.id,
-      text: lang === 'en' ? quote.content_en : quote.content_cn,
+      text: quote.text,
+      text2: quote.text2,
       color: color,
       angle,
       height,
@@ -182,14 +196,15 @@ const App: React.FC = () => {
     };
   };
 
-  const generateInitialSet = (qty: number, maxLength: number, lang: Language): CardData[] => {
+  const generateInitialSet = (qty: number, maxLength: number, lang: Language, theme: ThemeType): CardData[] => {
     const newCards: CardData[] = [];
     const usedIds = new Set<string>();
+    const SOURCE_DATA = getThemeData(theme);
     
     const angleStep = 360 / qty;
 
     for (let i = 0; i < qty; i++) {
-        const quote = getRandomQuote(usedIds, maxLength, lang);
+        const quote = getRandomQuote(usedIds, maxLength, lang, theme);
         usedIds.add(String(quote.id));
         
         const colors = Object.values(CardColor).filter(c => c !== CardColor.Glass);
@@ -198,7 +213,8 @@ const App: React.FC = () => {
         newCards.push({
             id: generateId(), 
             sourceId: quote.id,
-            text: lang === 'en' ? quote.content_en : quote.content_cn,
+            text: quote.text,
+            text2: quote.text2,
             color: color,
             angle: i * angleStep,
             height: (Math.random() - 0.5) * 60,
@@ -215,6 +231,15 @@ const App: React.FC = () => {
   // --- Handlers ---
 
   const handleUpdateSetting = (key: keyof AppSettings, value: any) => {
+    if (key === 'theme') {
+      // When theme changes, regenerate all cards with new theme data
+      const newTheme = value as ThemeType;
+      const newCards = generateInitialSet(settings.quantity, settings.maxTextLength, language, newTheme);
+      updateHistory(newCards);
+      setSettings(prev => ({ ...prev, theme: newTheme }));
+      return;
+    }
+    
     if (key === 'quantity') {
       const newQuantity = value as number;
       let newCards = [...cards];
@@ -223,7 +248,7 @@ const App: React.FC = () => {
       if (newQuantity > cards.length) {
         const countToAdd = newQuantity - cards.length;
         for (let i = 0; i < countToAdd; i++) {
-            newCards.push(generateRandomCard(usedIds, settings.maxTextLength, language));
+            newCards.push(generateRandomCard(usedIds, settings.maxTextLength, language, settings.theme));
         }
       } else if (newQuantity < cards.length) {
         newCards = newCards.slice(0, newQuantity);
@@ -238,20 +263,20 @@ const App: React.FC = () => {
       const updatedCards = cards.map(card => {
         // Only auto-replace data-sourced cards, preserve user custom cards
         if (card.sourceId !== undefined) {
-           const currentLen = card.text.length;
+           const currentLen = card.text.length + (card.text2?.length || 0);
            const allowedLen = language === 'en' ? newLimit * 2.5 : newLimit;
            
            if (currentLen > allowedLen) {
               // Generate replacement reusing position properties
               const usedIds = new Set<string>(cards.map(c => String(c.sourceId || '')));
-              const quote = getRandomQuote(usedIds, newLimit, language);
-              const text = language === 'en' ? quote.content_en : quote.content_cn;
+              const quote = getRandomQuote(usedIds, newLimit, language, settings.theme);
               
               // Only replace if the new quote is actually different or at least valid
               return {
                  ...card,
                  sourceId: quote.id,
-                 text: text,
+                 text: quote.text,
+                 text2: quote.text2,
                  // Optionally pick new color or keep old one? Let's keep old one for stability
               };
            }
@@ -276,21 +301,26 @@ const App: React.FC = () => {
     const newLang = language === 'en' ? 'zh' : 'en';
     setLanguage(newLang);
     
-    // Update text on existing data-driven cards
-    const updatedCards = cards.map(card => {
-        if (card.sourceId) {
-            const sourceItem = SOURCE_DATA.find(item => item.id === card.sourceId);
-            if (sourceItem) {
-                return {
-                    ...card,
-                    text: newLang === 'en' ? sourceItem.content_en : sourceItem.content_cn
-                };
-            }
-        }
-        return card;
-    });
-    
-    updateHistory(updatedCards);
+    // For quit-porn theme, update text based on language
+    // For other themes (quotes, reading), they already have both lines
+    if (settings.theme === 'quit-porn') {
+      const SOURCE_DATA = getThemeData(settings.theme);
+      const updatedCards = cards.map(card => {
+          if (card.sourceId) {
+              const sourceItem = SOURCE_DATA.find(item => item.id === card.sourceId);
+              if (sourceItem) {
+                  return {
+                      ...card,
+                      text: sourceItem.text,
+                      text2: sourceItem.text2
+                  };
+              }
+          }
+          return card;
+      });
+      
+      updateHistory(updatedCards);
+    }
   };
 
   const handleAddCard = (text: string, color: CardColor) => {
@@ -300,6 +330,7 @@ const App: React.FC = () => {
     const newCard: CardData = {
       id: generateId(),
       text,
+      text2: undefined, // User custom cards don't have second line by default
       color,
       angle,
       height,
@@ -340,6 +371,43 @@ const App: React.FC = () => {
     }
   };
 
+  const handleAIAnalyzeFromMenu = async () => {
+    if (contextMenu) {
+      const card = cards.find(c => c.id === contextMenu.cardId);
+      if (card) {
+        setArticleModal({
+          isOpen: true,
+          cardText: card.text,
+          cardText2: card.text2,
+          article: '',
+          isLoading: true,
+        });
+        setContextMenu(null);
+
+        const article = await generateArticle(card.text, card.text2);
+        setArticleModal(prev => ({
+          ...prev,
+          article,
+          isLoading: false,
+        }));
+      }
+    }
+  };
+
+  const handleDownloadArticle = () => {
+    saveArticleToFile(articleModal.cardText, articleModal.article);
+  };
+
+  const handleCloseArticleModal = () => {
+    setArticleModal({
+      isOpen: false,
+      cardText: '',
+      cardText2: '',
+      article: '',
+      isLoading: false,
+    });
+  };
+
   const handleSaveEdit = (newText: string) => {
     if (editingCardId) {
         const newCards = cards.map(c => 
@@ -361,7 +429,7 @@ const App: React.FC = () => {
 
   const handleReset = () => {
     setSettings(DEFAULT_SETTINGS);
-    const freshSet = generateInitialSet(DEFAULT_SETTINGS.quantity, DEFAULT_SETTINGS.maxTextLength, language);
+    const freshSet = generateInitialSet(DEFAULT_SETTINGS.quantity, DEFAULT_SETTINGS.maxTextLength, language, DEFAULT_SETTINGS.theme);
     setHistory([freshSet]);
     setHistoryIndex(0);
     localStorage.removeItem('mindmap-cards');
@@ -407,7 +475,7 @@ const App: React.FC = () => {
 
             const currentSourceIds = new Set<string>(currentCards.map(c => String(c.sourceId || '')));
             // Use current length setting for new cards
-            const newQuote = getRandomQuote(currentSourceIds, settings.maxTextLength, language);
+            const newQuote = getRandomQuote(currentSourceIds, settings.maxTextLength, language, settings.theme);
 
             const colors = Object.values(CardColor).filter(c => c !== CardColor.Glass);
             const newColor = colors[Math.floor(Math.random() * colors.length)];
@@ -416,7 +484,8 @@ const App: React.FC = () => {
                 ...oldCard,
                 id: generateId(), 
                 sourceId: newQuote.id,
-                text: language === 'en' ? newQuote.content_en : newQuote.content_cn,
+                text: newQuote.text,
+                text2: newQuote.text2,
                 color: newColor,
             };
 
@@ -431,7 +500,7 @@ const App: React.FC = () => {
     }, swapIntervalMs);
 
     return () => clearInterval(interval);
-  }, [hasInitialized, settings.isPaused, settings.speed, contextMenu, editingCardId, settings.maxTextLength, language]); // NOTE: rotation is not needed in deps as we read .get()
+  }, [hasInitialized, settings.isPaused, settings.speed, contextMenu, editingCardId, settings.maxTextLength, settings.theme, language]); // NOTE: rotation is not needed in deps as we read .get()
 
 
   // --- Initialization Effect ---
@@ -456,12 +525,12 @@ const App: React.FC = () => {
       try {
         const parsed = JSON.parse(savedCards);
         if (parsed.length > 0) initialSet = parsed;
-        else initialSet = generateInitialSet(loadedSettings.quantity, loadedSettings.maxTextLength, language);
+        else initialSet = generateInitialSet(loadedSettings.quantity, loadedSettings.maxTextLength, language, loadedSettings.theme);
       } catch (e) { 
-          initialSet = generateInitialSet(loadedSettings.quantity, loadedSettings.maxTextLength, language);
+          initialSet = generateInitialSet(loadedSettings.quantity, loadedSettings.maxTextLength, language, loadedSettings.theme);
       }
     } else {
-        initialSet = generateInitialSet(loadedSettings.quantity, loadedSettings.maxTextLength, language);
+        initialSet = generateInitialSet(loadedSettings.quantity, loadedSettings.maxTextLength, language, loadedSettings.theme);
     }
 
     setHistory([initialSet]);
@@ -506,6 +575,7 @@ const App: React.FC = () => {
             language={language}
             onDelete={handleDeleteFromMenu}
             onEdit={handleEditFromMenu}
+            onAIAnalyze={handleAIAnalyzeFromMenu}
             onClose={handleCloseContextMenu}
           />
         )}
@@ -516,6 +586,16 @@ const App: React.FC = () => {
             initialText={cards.find(c => c.id === editingCardId)?.text || ''}
             onSave={handleSaveEdit}
             onClose={() => setEditingCardId(null)}
+        />
+
+        <ArticleModal
+          isOpen={articleModal.isOpen}
+          language={language}
+          cardText={articleModal.cardText}
+          article={articleModal.article}
+          isLoading={articleModal.isLoading}
+          onClose={handleCloseArticleModal}
+          onDownload={handleDownloadArticle}
         />
       </main>
 

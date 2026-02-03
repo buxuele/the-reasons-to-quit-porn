@@ -59,6 +59,7 @@ export const TRANSLATIONS = {
     saveChanges: "Save Changes",
     cancel: "Cancel",
     maxLength: "Max Length",
+    theme: "Theme",
   },
   zh: {
     editor: "编辑器",
@@ -85,5 +86,6 @@ export const TRANSLATIONS = {
     saveChanges: "保存更改",
     cancel: "取消",
     maxLength: "最大字数",
+    theme: "主题",
   }
 };

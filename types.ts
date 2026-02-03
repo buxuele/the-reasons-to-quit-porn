@@ -1,8 +1,9 @@
 
 export interface CardData {
   id: string;
-  sourceId?: number; // Optional ID linking back to source data
+  sourceId?: string | number; // Optional ID linking back to source data
   text: string;
+  text2?: string; // Optional second line (for translation, etc.)
   color: string;
   angle: number; // Position on the ring (0-360 degrees)
   height: number; // Vertical offset percentage (-50 to 50)
@@ -20,7 +21,10 @@ export interface AppSettings {
   showGrid: boolean;
   isPaused: boolean; // Manual pause state
   maxTextLength: number; // New: Maximum characters (based on CN length)
+  theme: ThemeType; // Current theme
 }
+
+export type ThemeType = 'quit-porn' | 'reading' | 'quotes';
 
 export enum CardColor {
   Red = 'red',

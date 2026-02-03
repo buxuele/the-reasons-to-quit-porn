@@ -134,9 +134,16 @@ const FloatingCard: React.FC<FloatingCardProps> = memo(({
           onContextMenu={handleContextMenu}
         >
            {/* Text Content */}
-          <p className="text-lg font-medium leading-relaxed text-center drop-shadow-md select-none">
-            {card.text}
-          </p>
+          <div className="space-y-2">
+            <p className="text-lg font-normal leading-relaxed text-left drop-shadow-md select-none">
+              {card.text}
+            </p>
+            {card.text2 && (
+              <p className="text-base font-normal leading-relaxed text-left drop-shadow-md select-none opacity-90">
+                {card.text2}
+              </p>
+            )}
+          </div>
           
           {/* Shine effect */}
           <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-white/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
