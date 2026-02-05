@@ -48,7 +48,7 @@ const EditModal: React.FC<EditModalProps> = ({ initialText, isOpen, language, on
             <button onClick={onClose} className="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-white/10 transition-colors">
                 {t.cancel}
             </button>
-            <button onClick={() => onSave(text)} className="px-4 py-2 rounded-lg text-sm font-medium bg-primary text-white hover:bg-indigo-500 transition-colors flex items-center gap-2">
+            <button onClick={() => onSave(text)} className="px-4 py-2 rounded-lg text-sm font-medium bg-primary text-white hover:bg-[#0f4a63] transition-colors flex items-center gap-2">
                 <Save size={16} />
                 {t.saveChanges}
             </button>

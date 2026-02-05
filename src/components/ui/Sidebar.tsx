@@ -125,16 +125,16 @@ const Sidebar: React.FC<SidebarProps> = ({
       </div>
 
       {/* Scrollable Content */}
-      <div className="flex-1 overflow-y-auto px-8 py-6 space-y-8 scrollbar-hide">
+      <div className="flex-1 overflow-y-auto px-8 py-4 space-y-5 scrollbar-hide">
         
         {/* Appearance Section */}
-        <section className="space-y-6">
+        <section className="space-y-4">
           <div className="flex items-center justify-between">
             <h3 className="text-[10px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">{t.appearance}</h3>
             <SlidersHorizontal size={14} className="text-gray-400 dark:text-gray-500" />
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-4">
             {/* Controls */}
             {[
               { label: t.quantity, value: settings.quantity, key: 'quantity', min: 1, max: 20, step: 1, format: (v: number) => v },
@@ -144,8 +144,8 @@ const Sidebar: React.FC<SidebarProps> = ({
               { label: t.maxLength, value: settings.maxTextLength, key: 'maxTextLength', min: 10, max: 150, step: 5, format: (v: number) => v }
             ].map((control) => (
               <div key={control.key} className="group">
-                <div className="flex justify-between mb-2">
-                  <label className="text-sm font-medium text-gray-600 dark:text-gray-300">{control.label}</label>
+                <div className="flex justify-between mb-1.5">
+                  <label className="text-xs font-medium text-gray-600 dark:text-gray-300">{control.label}</label>
                   <span className="text-xs font-mono text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20">
                     {control.format(control.value as number)}
                   </span>
@@ -157,26 +157,23 @@ const Sidebar: React.FC<SidebarProps> = ({
                   step={control.step}
                   value={control.value as number}
                   onChange={(e) => onUpdateSettings(control.key as keyof AppSettings, parseFloat(e.target.value))}
-                  className="w-full h-1.5 bg-gray-300 dark:bg-gray-700 rounded-full appearance-none cursor-pointer accent-primary hover:accent-indigo-400 transition-colors"
+                  className="w-full h-1.5 bg-gray-300 dark:bg-gray-700 rounded-full appearance-none cursor-pointer accent-primary transition-colors"
                 />
               </div>
             ))}
           </div>
         </section>
 
-        {/* Separator */}
-        <div className="h-px bg-gray-200 dark:bg-white/10" />
-
         {/* Add New Thought Section */}
-        <section className="space-y-5">
+        <section className="space-y-3">
           <h3 className="text-[10px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">{t.addThought}</h3>
           
-          <div className="bg-white dark:bg-black/30 rounded-2xl p-1 border border-gray-200 dark:border-white/10 shadow-sm focus-within:ring-2 focus-within:ring-primary/50 transition-all">
+          <div className="bg-white dark:bg-black/30 rounded-xl p-1 border border-gray-200 dark:border-white/10 shadow-sm focus-within:ring-2 focus-within:ring-primary/50 transition-all">
             <textarea
               value={newCardText}
               onChange={(e) => setNewCardText(e.target.value)}
               maxLength={150}
-              className="w-full h-24 bg-transparent rounded-xl p-3 text-sm text-gray-800 dark:text-gray-200 resize-none placeholder-gray-400 dark:placeholder-gray-500 outline-none"
+              className="w-full h-20 bg-transparent rounded-xl p-2.5 text-sm text-gray-800 dark:text-gray-200 resize-none placeholder-gray-400 dark:placeholder-gray-500 outline-none"
               placeholder={t.placeholder}
             ></textarea>
             <div className="flex justify-between items-center px-3 pb-2">
@@ -211,7 +208,7 @@ const Sidebar: React.FC<SidebarProps> = ({
           <button 
             onClick={handleSubmit}
             disabled={!newCardText.trim()}
-            className="w-full py-3 bg-primary hover:bg-indigo-500 text-white text-sm font-bold rounded-xl shadow-lg shadow-primary/25 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+            className="w-full py-2.5 bg-primary hover:bg-[#0f4a63] text-white text-sm font-bold rounded-xl shadow-lg shadow-primary/25 flex items-center justify-center gap-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <PlusCircle size={16} />
             {t.createBtn}
@@ -219,65 +216,65 @@ const Sidebar: React.FC<SidebarProps> = ({
         </section>
 
         {/* Footer Toggle */}
-        <div className="pt-2 space-y-3">
+        <div className="space-y-2.5">
           <button 
             onClick={handleToggleDarkMode}
-            className="w-full flex items-center justify-between py-3 px-4 rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 hover:bg-gray-50 dark:hover:bg-white/10 transition-colors group shadow-sm"
+            className="w-full flex items-center justify-between py-2.5 px-3 rounded-lg border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 hover:bg-gray-50 dark:hover:bg-white/10 transition-colors group shadow-sm"
           >
-            <span className="text-sm font-medium text-gray-700 dark:text-gray-200">{t.darkMode}</span>
-            <div className={`w-9 h-5 ${isDarkMode ? 'bg-indigo-500' : 'bg-gray-300'} rounded-full relative transition-colors`}>
+            <span className="text-xs font-medium text-gray-700 dark:text-gray-200">{t.darkMode}</span>
+            <div className={`w-9 h-5 ${isDarkMode ? 'bg-[#145A7C]' : 'bg-gray-300'} rounded-full relative transition-colors`}>
               <div className={`absolute top-1 w-3 h-3 bg-white rounded-full shadow-sm transition-all ${isDarkMode ? 'left-[20px]' : 'left-1'}`}></div>
             </div>
           </button>
 
-          <div className="flex gap-2">
+          <div className="flex gap-1.5">
             <a 
               href="https://x.com/fanchuangwater" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 hover:bg-gray-50 dark:hover:bg-white/10 transition-colors text-gray-700 dark:text-gray-300 text-xs font-medium"
+              className="flex-1 flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 hover:bg-gray-50 dark:hover:bg-white/10 transition-colors text-gray-700 dark:text-gray-300 text-xs font-medium"
             >
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
               <span>X</span>
             </a>
             <a 
               href="https://github.com/buxuelezhihu" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 hover:bg-gray-50 dark:hover:bg-white/10 transition-colors text-gray-700 dark:text-gray-300 text-xs font-medium"
+              className="flex-1 flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 hover:bg-gray-50 dark:hover:bg-white/10 transition-colors text-gray-700 dark:text-gray-300 text-xs font-medium"
             >
-              <Github size={16} />
+              <Github size={14} />
               <span>GitHub</span>
             </a>
             <a 
               href="https://www.zhihu.com/people/fanchaung" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 hover:bg-gray-50 dark:hover:bg-white/10 transition-colors text-gray-700 dark:text-gray-300 text-xs font-medium"
+              className="flex-1 flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 hover:bg-gray-50 dark:hover:bg-white/10 transition-colors text-gray-700 dark:text-gray-300 text-xs font-medium"
             >
-              <span className="text-base font-bold">知</span>
+              <span className="text-sm font-bold">知</span>
             </a>
           </div>
         </div>
       </div>
 
        {/* Bottom Actions */}
-       <div className="p-4 border-t border-gray-200 dark:border-white/10 bg-gray-100/50 dark:bg-black/30 rounded-b-3xl flex gap-3">
+       <div className="p-3 border-t border-gray-200 dark:border-white/10 bg-gray-100/50 dark:bg-black/30 rounded-b-3xl flex gap-2">
           <button 
             onClick={handleReset}
-            className="flex-1 text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 hover:text-red-500 dark:hover:text-red-400 transition-colors flex items-center justify-center gap-1.5 py-2 rounded-lg hover:bg-black/5 dark:hover:bg-white/5"
+            className="flex-1 text-[10px] font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 hover:text-red-500 dark:hover:text-red-400 transition-colors flex items-center justify-center gap-1 py-2 rounded-lg hover:bg-black/5 dark:hover:bg-white/5"
             title={language === 'en' ? "Reset to Defaults" : "恢复默认设置"}
           >
-             <RotateCcw size={14} />
+             <RotateCcw size={12} />
              {resetBtnText || t.reset}
           </button>
           <div className="w-px bg-gray-300 dark:bg-white/10 my-1"></div>
           <button 
             onClick={handleSave}
-            className="flex-1 text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors flex items-center justify-center gap-1.5 py-2 rounded-lg hover:bg-black/5 dark:hover:bg-white/5"
+            className="flex-1 text-[10px] font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors flex items-center justify-center gap-1 py-2 rounded-lg hover:bg-black/5 dark:hover:bg-white/5"
             title={language === 'en' ? "Save to LocalStorage" : "保存到本地缓存"}
           >
-             <Save size={14} />
+             <Save size={12} />
              {saveBtnText || t.save}
           </button>
        </div>
