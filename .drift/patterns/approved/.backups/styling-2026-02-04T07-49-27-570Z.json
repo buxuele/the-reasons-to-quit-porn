@@ -1,0 +1,2580 @@
+{
+  "version": "1.0.0",
+  "category": "styling",
+  "patterns": [
+    {
+      "id": "015a4264f32bd8f3",
+      "subcategory": "design-tokens",
+      "name": "Design Tokens Detector",
+      "description": "Learns design token patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/design-tokens",
+          "patternId": "styling/design-tokens/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.14,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 11,
+          "column": 24
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 11,
+          "column": 58
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 168,
+          "column": 57
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 4,
+          "column": 44
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 6,
+          "column": 10
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 6,
+          "column": 50
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 2,
+          "column": 10
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 398,
+          "column": 127
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:19.032Z",
+        "approvedAt": "2026-02-04T07:49:19.032Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "dc14aeea32e15d91",
+      "subcategory": "design-tokens",
+      "name": "Design Tokens Detector",
+      "description": "Learns design token patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/design-tokens",
+          "patternId": "styling/design-tokens/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.36,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 25,
+          "column": 34
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 140,
+          "column": 87
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 140,
+          "column": 94
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 140,
+          "column": 106
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 176,
+          "column": 92
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 176,
+          "column": 99
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 199,
+          "column": 79
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 199,
+          "column": 86
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 239,
+          "column": 39
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 62,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 62,
+          "column": 13
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 89,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 242,
+          "column": 14
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 242,
+          "column": 34
+        },
+        {
+          "file": "src\\lib\\types.ts",
+          "line": 24,
+          "column": 3
+        },
+        {
+          "file": "src\\lib\\types.ts",
+          "line": 24,
+          "column": 10
+        },
+        {
+          "file": "src\\lib\\types.ts",
+          "line": 24,
+          "column": 32
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:19.087Z",
+        "approvedAt": "2026-02-04T07:49:19.087Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "e2c71921616e65bc",
+      "subcategory": "color-usage",
+      "name": "Color Usage Detector",
+      "description": "Learns color usage patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/color-usage",
+          "patternId": "styling/color-usage/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.48,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 180,
+          "column": 11
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 181,
+          "column": 11
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 181,
+          "column": 19
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 181,
+          "column": 53
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 188,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 188,
+          "column": 14
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 210,
+          "column": 15
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 211,
+          "column": 15
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 211,
+          "column": 23
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 211,
+          "column": 57
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 218,
+          "column": 13
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 218,
+          "column": 20
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 326,
+          "column": 40
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 480,
+          "column": 19
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 489,
+          "column": 17
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 8,
+          "column": 7
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 8,
+          "column": 28
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 16,
+          "column": 13
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 24,
+          "column": 11
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 25,
+          "column": 11
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 13,
+          "column": 29
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 8,
+          "column": 14
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 22,
+          "column": 14
+        },
+        {
+          "file": "src\\lib\\types.ts",
+          "line": 7,
+          "column": 3
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:19.141Z",
+        "approvedAt": "2026-02-04T07:49:19.141Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "39f41abd96ff9090",
+      "subcategory": "color-usage",
+      "name": "Color Usage Detector",
+      "description": "Learns color usage patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/color-usage",
+          "patternId": "styling/color-usage/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 4,
+          "column": 8
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 4,
+          "column": 41
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 5,
+          "column": 10
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 5,
+          "column": 10
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 734,
+          "column": 86
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:19.196Z",
+        "approvedAt": "2026-02-04T07:49:19.196Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "7a618dd596a7cc12",
+      "subcategory": "typography",
+      "name": "Typography Detector",
+      "description": "Learns typography patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/typography",
+          "patternId": "styling/typography/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 8,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 187,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 187,
+          "column": 20
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 217,
+          "column": 13
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 217,
+          "column": 26
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 279,
+          "column": 18
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 279,
+          "column": 31
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 315,
+          "column": 23
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 315,
+          "column": 41
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 326,
+          "column": 26
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 333,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 414,
+          "column": 46
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 488,
+          "column": 17
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 488,
+          "column": 33
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 179,
+          "column": 11
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 220,
+          "column": 13
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 328,
+          "column": 11
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 50,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 81,
+          "column": 25
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 54,
+          "column": 21
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 64,
+          "column": 19
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 74,
+          "column": 19
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 31,
+          "column": 20
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 52,
+          "column": 23
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 13,
+          "column": 15
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 94,
+          "column": 24
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 101,
+          "column": 20
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 134,
+          "column": 32
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 216,
+          "column": 25
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 242,
+          "column": 25
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 251,
+          "column": 20
+        },
+        {
+          "file": "src\\components\\ui\\Toolbar.tsx",
+          "line": 18,
+          "column": 15
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 34,
+          "column": 3
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 45,
+          "column": 3
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 128,
+          "column": 3
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 129,
+          "column": 3
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 137,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 138,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 143,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 144,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 149,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 150,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 155,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 156,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 161,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 162,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 167,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 168,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 173,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 174,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 179,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 180,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 185,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 186,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 191,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 192,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 197,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 198,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 203,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 204,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 209,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 210,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 215,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 216,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 221,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 222,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\types.ts",
+          "line": 5,
+          "column": 3
+        },
+        {
+          "file": "src\\lib\\types.ts",
+          "line": 9,
+          "column": 3
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:19.258Z",
+        "approvedAt": "2026-02-04T07:49:19.258Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "3651a8a5f4691bc6",
+      "subcategory": "class-naming",
+      "name": "Class Naming Detector",
+      "description": "Learns class naming patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/class-naming",
+          "patternId": "styling/class-naming/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 8,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 546,
+          "column": 10
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 549,
+          "column": 13
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 550,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 42,
+          "column": 10
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 43,
+          "column": 12
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 44,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 45,
+          "column": 15
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 48,
+          "column": 13
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 54,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 55,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 56,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 60,
+          "column": 18
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 61,
+          "column": 20
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 62,
+          "column": 22
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 63,
+          "column": 20
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 67,
+          "column": 18
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 68,
+          "column": 20
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 76,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 79,
+          "column": 15
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 86,
+          "column": 15
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 43,
+          "column": 7
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 46,
+          "column": 12
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 52,
+          "column": 11
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 54,
+          "column": 31
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 62,
+          "column": 11
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 64,
+          "column": 29
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 72,
+          "column": 11
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 74,
+          "column": 29
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 44,
+          "column": 7
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 26,
+          "column": 10
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 27,
+          "column": 12
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 28,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 29,
+          "column": 17
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 30,
+          "column": 39
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 31,
+          "column": 30
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 34,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 39,
+          "column": 17
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 43,
+          "column": 18
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 47,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 48,
+          "column": 39
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 51,
+          "column": 50
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 10,
+          "column": 10
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 14,
+          "column": 9
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 22,
+          "column": 9
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 30,
+          "column": 12
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 31,
+          "column": 12
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 34,
+          "column": 12
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 15,
+          "column": 9
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 23,
+          "column": 9
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 31,
+          "column": 142
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 87,
+          "column": 7
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 114,
+          "column": 11
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 137,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 138,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 142,
+          "column": 18
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 149,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 27,
+          "column": 9
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 88,
+          "column": 7
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 121,
+          "column": 11
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 66,
+          "column": 7
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 81,
+          "column": 12
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 83,
+          "column": 15
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 86,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 88,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 91,
+          "column": 17
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 98,
+          "column": 17
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 107,
+          "column": 12
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 108,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 113,
+          "column": 15
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 128,
+          "column": 12
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 131,
+          "column": 18
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 132,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 133,
+          "column": 17
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 134,
+          "column": 42
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 137,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 146,
+          "column": 38
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 147,
+          "column": 22
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 148,
+          "column": 26
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 149,
+          "column": 25
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 160,
+          "column": 19
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 168,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 171,
+          "column": 18
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 172,
+          "column": 15
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 174,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 179,
+          "column": 15
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 182,
+          "column": 18
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 184,
+          "column": 21
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 189,
+          "column": 23
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 198,
+          "column": 22
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 205,
+          "column": 22
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 214,
+          "column": 13
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 222,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 225,
+          "column": 13
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 227,
+          "column": 19
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 228,
+          "column": 18
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 229,
+          "column": 20
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 236,
+          "column": 13
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 13
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 245,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 13
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:19.320Z",
+        "approvedAt": "2026-02-04T07:49:19.320Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "064ec4d302b9a196",
+      "subcategory": "tailwind-patterns",
+      "name": "Tailwind Patterns Detector",
+      "description": "Learns Tailwind CSS patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/tailwind-patterns",
+          "patternId": "styling/tailwind-patterns/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.27,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 149,
+          "column": 34
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 149,
+          "column": 54
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 156,
+          "column": 38
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 156,
+          "column": 58
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 164,
+          "column": 29
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 164,
+          "column": 46
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 165,
+          "column": 29
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 165,
+          "column": 46
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 186,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 186,
+          "column": 19
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 216,
+          "column": 13
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 216,
+          "column": 25
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 266,
+          "column": 36
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 266,
+          "column": 56
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 278,
+          "column": 18
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 278,
+          "column": 30
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 314,
+          "column": 23
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 314,
+          "column": 40
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 380,
+          "column": 26
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 387,
+          "column": 52
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 387,
+          "column": 63
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 487,
+          "column": 17
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 487,
+          "column": 32
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 586,
+          "column": 67
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 20,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 139,
+          "column": 21
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:19.378Z",
+        "approvedAt": "2026-02-04T07:49:19.378Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "1a2aa230277bb501",
+      "subcategory": "tailwind-patterns",
+      "name": "Tailwind Patterns Detector",
+      "description": "Learns Tailwind CSS patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/tailwind-patterns",
+          "patternId": "styling/tailwind-patterns/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.49,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 187,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 187,
+          "column": 20
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 217,
+          "column": 13
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 217,
+          "column": 26
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 279,
+          "column": 18
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 279,
+          "column": 31
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 315,
+          "column": 23
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 315,
+          "column": 41
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 326,
+          "column": 26
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 333,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 414,
+          "column": 46
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 488,
+          "column": 17
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 488,
+          "column": 33
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 13,
+          "column": 15
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 34,
+          "column": 3
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 45,
+          "column": 3
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 128,
+          "column": 3
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 129,
+          "column": 3
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 137,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 138,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 143,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 144,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 149,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 150,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 155,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 156,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 161,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 162,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 167,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 168,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 173,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 174,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 179,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 180,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 185,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 186,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 191,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 192,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 197,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 198,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 203,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 204,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 209,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 210,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 215,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 216,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 221,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 222,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\types.ts",
+          "line": 5,
+          "column": 3
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:19.431Z",
+        "approvedAt": "2026-02-04T07:49:19.431Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "2094b7639cac992b",
+      "subcategory": "z-index-scale",
+      "name": "Z-Index Scale Detector",
+      "description": "Learns z-index scale patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/z-index-scale",
+          "patternId": "styling/z-index-scale/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 8,
+          "column": 39
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 9,
+          "column": 37
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 10,
+          "column": 40
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:19.483Z",
+        "approvedAt": "2026-02-04T07:49:19.483Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "df9357a0811437f2",
+      "subcategory": "spacing-scale",
+      "name": "Spacing Scale Detector",
+      "description": "Learns spacing scale patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/spacing-scale",
+          "patternId": "styling/spacing-scale/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 76,
+          "column": 57
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 47,
+          "column": 92
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 214,
+          "column": 168
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 205
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 205
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:19.536Z",
+        "approvedAt": "2026-02-04T07:49:19.536Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "e7dcc73dcd461cd5",
+      "subcategory": "color-usage",
+      "name": "Color Usage Detector",
+      "description": "Learns color usage patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/color-usage",
+          "patternId": "styling/color-usage/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.24,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 44,
+          "column": 63
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 44,
+          "column": 72
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 44,
+          "column": 93
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 76,
+          "column": 67
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 76,
+          "column": 76
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 76,
+          "column": 97
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 225,
+          "column": 206
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 165
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 165
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 225,
+          "column": 86
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 225,
+          "column": 93
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 225,
+          "column": 114
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:19.590Z",
+        "approvedAt": "2026-02-04T07:49:19.590Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "52853bf921cff242",
+      "subcategory": "tailwind-patterns",
+      "name": "Tailwind Patterns Detector",
+      "description": "Learns Tailwind CSS patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/tailwind-patterns",
+          "patternId": "styling/tailwind-patterns/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.55,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 42,
+          "column": 76
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 44,
+          "column": 59
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 76,
+          "column": 63
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 26,
+          "column": 80
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 47,
+          "column": 98
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 47,
+          "column": 114
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 26,
+          "column": 76
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 47,
+          "column": 25
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 24
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 172
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 24
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 172
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 81,
+          "column": 113
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 81,
+          "column": 130
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 91,
+          "column": 185
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 91,
+          "column": 207
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 98,
+          "column": 164
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 225,
+          "column": 130
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 225,
+          "column": 144
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 225,
+          "column": 161
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 225,
+          "column": 183
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 235
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 257
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 235
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 257
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 91,
+          "column": 83
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 91,
+          "column": 103
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 91,
+          "column": 122
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 91,
+          "column": 142
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 91,
+          "column": 166
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 98,
+          "column": 82
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 98,
+          "column": 101
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 98,
+          "column": 121
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 98,
+          "column": 145
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 133,
+          "column": 28
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 133,
+          "column": 76
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 133,
+          "column": 95
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 172,
+          "column": 26
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 172,
+          "column": 74
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 172,
+          "column": 93
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 31
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 78
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 97
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 117
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 141
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 31
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 78
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 97
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 117
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 141
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 225,
+          "column": 24
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:19.648Z",
+        "approvedAt": "2026-02-04T07:49:19.648Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "2311fe626cf28193",
+      "subcategory": "responsive",
+      "name": "Responsive Detector",
+      "description": "Learns responsive design patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/responsive",
+          "patternId": "styling/responsive/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.07,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 42,
+          "column": 102
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 26,
+          "column": 106
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 225,
+          "column": 226
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 226
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 226
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 225,
+          "column": 83
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 86,
+          "column": 110
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:19.703Z",
+        "approvedAt": "2026-02-04T07:49:19.703Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "6dee4c16b95d2fc4",
+      "subcategory": "color-usage",
+      "name": "Color Usage Detector",
+      "description": "Learns color usage patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/color-usage",
+          "patternId": "styling/color-usage/class_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 4,
+          "column": 11
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:19.757Z",
+        "approvedAt": "2026-02-04T07:49:19.757Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "344ec6f14fc156dd",
+      "subcategory": "typography",
+      "name": "Typography Detector",
+      "description": "Learns typography patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/typography",
+          "patternId": "styling/typography/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.56,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 91,
+          "column": 91
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 91,
+          "column": 83
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 91,
+          "column": 103
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 91,
+          "column": 122
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 91,
+          "column": 142
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 91,
+          "column": 166
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 98,
+          "column": 82
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 98,
+          "column": 101
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 98,
+          "column": 121
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 98,
+          "column": 145
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 133,
+          "column": 28
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 133,
+          "column": 76
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 133,
+          "column": 95
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 172,
+          "column": 26
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 172,
+          "column": 74
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 172,
+          "column": 93
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 31
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 78
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 97
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 117
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 141
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 31
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 78
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 97
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 117
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 141
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 278,
+          "column": 218
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 470,
+          "column": 155
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:19.810Z",
+        "approvedAt": "2026-02-04T07:49:19.810Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "975934b941828b8f",
+      "subcategory": "design-tokens",
+      "name": "Design Tokens Detector",
+      "description": "Learns design token patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/design-tokens",
+          "patternId": "styling/design-tokens/class_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 32,
+          "column": 18
+        },
+        {
+          "file": "src\\lib\\types.ts",
+          "line": 27,
+          "column": 13
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:19.864Z",
+        "approvedAt": "2026-02-04T07:49:19.864Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "47568669121bbdb3",
+      "subcategory": "design-tokens",
+      "name": "Design Tokens Detector",
+      "description": "Learns design token patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/design-tokens",
+          "patternId": "styling/design-tokens/function_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.8575,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 228,
+          "column": 30
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 228,
+          "column": 37
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 228,
+          "column": 49
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:19.918Z",
+        "approvedAt": "2026-02-04T07:49:19.918Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-02-04T07:49:27.497Z",
+  "checksum": "3b6ccaea26e08e0b"
+}

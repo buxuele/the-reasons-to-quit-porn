@@ -1,0 +1,1245 @@
+{
+  "version": "1.0.0",
+  "category": "components",
+  "patterns": [
+    {
+      "id": "67bfdb25a88d9152",
+      "subcategory": "component-structure",
+      "name": "Component Structure Detector",
+      "description": "Learns component structure patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/component-structure",
+          "patternId": "components/component-structure/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.12,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 8,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 502,
+          "column": 5
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 545,
+          "column": 3
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 553,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 31,
+          "column": 5
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 40,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 50,
+          "column": 5
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 85,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 64,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\Toolbar.tsx",
+          "line": 11,
+          "column": 3
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:18.341Z",
+        "approvedAt": "2026-02-04T07:49:18.341Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "0b53d3e8d56cf6ab",
+      "subcategory": "duplicate-detection",
+      "name": "Duplicate Detection Detector",
+      "description": "Learns duplicate component patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/duplicate-detection",
+          "patternId": "components/duplicate-detection/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.09,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 148,
+          "column": 46
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 441,
+          "column": 69
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 446,
+          "column": 43
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 450,
+          "column": 44
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 508,
+          "column": 25
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 543,
+          "column": 24
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 24,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 23,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 40,
+          "column": 30
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:18.404Z",
+        "approvedAt": "2026-02-04T07:49:18.404Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "9a6877a516f93633",
+      "subcategory": "duplicate-detection",
+      "name": "Duplicate Detection Detector",
+      "description": "Learns duplicate component patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/duplicate-detection",
+          "patternId": "components/duplicate-detection/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.12,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 8,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 502,
+          "column": 5
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 545,
+          "column": 3
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 553,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 31,
+          "column": 5
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 40,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 50,
+          "column": 5
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 85,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 64,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\Toolbar.tsx",
+          "line": 11,
+          "column": 3
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:18.470Z",
+        "approvedAt": "2026-02-04T07:49:18.470Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "062f2dd576a0c53e",
+      "subcategory": "duplicate-detection",
+      "name": "Duplicate Detection Detector",
+      "description": "Learns duplicate component patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/duplicate-detection",
+          "patternId": "components/duplicate-detection/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 8,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 546,
+          "column": 10
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 549,
+          "column": 13
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 550,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 42,
+          "column": 10
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 43,
+          "column": 12
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 44,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 45,
+          "column": 15
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 48,
+          "column": 13
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 54,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 55,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 56,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 60,
+          "column": 18
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 61,
+          "column": 20
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 62,
+          "column": 22
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 63,
+          "column": 20
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 67,
+          "column": 18
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 68,
+          "column": 20
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 76,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 79,
+          "column": 15
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 86,
+          "column": 15
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 43,
+          "column": 7
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 46,
+          "column": 12
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 52,
+          "column": 11
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 54,
+          "column": 31
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 62,
+          "column": 11
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 64,
+          "column": 29
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 72,
+          "column": 11
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 74,
+          "column": 29
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 26,
+          "column": 10
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 27,
+          "column": 12
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 28,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 29,
+          "column": 17
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 30,
+          "column": 39
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 31,
+          "column": 30
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 34,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 39,
+          "column": 17
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 43,
+          "column": 18
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 47,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 48,
+          "column": 39
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 51,
+          "column": 50
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 10,
+          "column": 10
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 14,
+          "column": 9
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 22,
+          "column": 9
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 30,
+          "column": 12
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 31,
+          "column": 12
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 34,
+          "column": 12
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 87,
+          "column": 7
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 114,
+          "column": 11
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 137,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 138,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 142,
+          "column": 18
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 149,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 66,
+          "column": 7
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 81,
+          "column": 12
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 83,
+          "column": 15
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 86,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 88,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 91,
+          "column": 17
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 98,
+          "column": 17
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 107,
+          "column": 12
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 108,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 113,
+          "column": 15
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 128,
+          "column": 12
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 131,
+          "column": 18
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 132,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 133,
+          "column": 17
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 134,
+          "column": 42
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 137,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 146,
+          "column": 38
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 147,
+          "column": 22
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 148,
+          "column": 26
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 149,
+          "column": 25
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 160,
+          "column": 19
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 168,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 171,
+          "column": 18
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 172,
+          "column": 15
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 174,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 179,
+          "column": 15
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 182,
+          "column": 18
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 184,
+          "column": 21
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 189,
+          "column": 23
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 198,
+          "column": 22
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 205,
+          "column": 22
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 214,
+          "column": 13
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 222,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 225,
+          "column": 13
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 227,
+          "column": 19
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 228,
+          "column": 18
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 229,
+          "column": 20
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 236,
+          "column": 13
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 13
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 245,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 13
+        },
+        {
+          "file": "src\\components\\ui\\Toolbar.tsx",
+          "line": 12,
+          "column": 10
+        },
+        {
+          "file": "src\\components\\ui\\Toolbar.tsx",
+          "line": 15,
+          "column": 9
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:18.526Z",
+        "approvedAt": "2026-02-04T07:49:18.526Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "daebf1b9a42b9afd",
+      "subcategory": "near-duplicate",
+      "name": "Near Duplicate Detector",
+      "description": "Learns near-duplicate component patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/near-duplicate",
+          "patternId": "components/near-duplicate/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.12,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 8,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 502,
+          "column": 5
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 545,
+          "column": 3
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 553,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 41,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 31,
+          "column": 5
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 40,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 50,
+          "column": 5
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 85,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 64,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\Toolbar.tsx",
+          "line": 11,
+          "column": 3
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:18.587Z",
+        "approvedAt": "2026-02-04T07:49:18.587Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "b2d91f311f1379a9",
+      "subcategory": "state-patterns",
+      "name": "State Patterns Detector",
+      "description": "Learns state management patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/state-patterns",
+          "patternId": "components/state-patterns/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 2,
+          "column": 17
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 2,
+          "column": 17
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 2,
+          "column": 17
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 2,
+          "column": 17
+        },
+        {
+          "file": "src\\lib\\types.ts",
+          "line": 22,
+          "column": 38
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:18.644Z",
+        "approvedAt": "2026-02-04T07:49:18.644Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "a4b941b1ead7f71d",
+      "subcategory": "modal-patterns",
+      "name": "Modal Patterns Detector",
+      "description": "Learns modal/dialog patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/modal-patterns",
+          "patternId": "components/modal-patterns/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.2,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.8825,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 579,
+          "column": 13
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 588,
+          "column": 13
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 597,
+          "column": 11
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 611,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 587,
+          "column": 13
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 609,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 607,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 401,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 421,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 411,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 425,
+          "column": 9
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 11,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 13,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 12,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 11,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 15,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 13,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 50,
+          "column": 9
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 39,
+          "column": 9
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:18.705Z",
+        "approvedAt": "2026-02-04T07:49:18.705Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "31f62b44b24031f9",
+      "subcategory": "modal-patterns",
+      "name": "Modal Patterns Detector",
+      "description": "Learns modal/dialog patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/modal-patterns",
+          "patternId": "components/modal-patterns/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.8825,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 22,
+          "column": 9
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 51,
+          "column": 36
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 51,
+          "column": 5
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 41,
+          "column": 5
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:18.765Z",
+        "approvedAt": "2026-02-04T07:49:18.765Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "f33fef2644451795",
+      "subcategory": "component-structure",
+      "name": "Component Structure Detector",
+      "description": "Learns component structure patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/component-structure",
+          "patternId": "components/component-structure/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\index.tsx",
+          "line": 11,
+          "column": 6
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:18.820Z",
+        "approvedAt": "2026-02-04T07:49:18.820Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "c23de82121e5112f",
+      "subcategory": "duplicate-detection",
+      "name": "Duplicate Detection Detector",
+      "description": "Learns duplicate component patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/duplicate-detection",
+          "patternId": "components/duplicate-detection/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\index.tsx",
+          "line": 11,
+          "column": 6
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:18.873Z",
+        "approvedAt": "2026-02-04T07:49:18.873Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "fd347d462339df2a",
+      "subcategory": "near-duplicate",
+      "name": "Near Duplicate Detector",
+      "description": "Learns near-duplicate component patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/near-duplicate",
+          "patternId": "components/near-duplicate/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\index.tsx",
+          "line": 11,
+          "column": 6
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:18.926Z",
+        "approvedAt": "2026-02-04T07:49:18.926Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "756efe9ceec48f9c",
+      "subcategory": "composition",
+      "name": "Composition Detector",
+      "description": "Learns component composition patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/composition",
+          "patternId": "components/composition/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\index.tsx",
+          "line": 11,
+          "column": 6
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:18.980Z",
+        "approvedAt": "2026-02-04T07:49:18.980Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-02-04T07:49:27.566Z",
+  "checksum": "4078b183e4818fe2"
+}

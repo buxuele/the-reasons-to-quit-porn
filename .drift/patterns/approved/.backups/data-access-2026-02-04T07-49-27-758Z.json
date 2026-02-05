@@ -1,0 +1,1244 @@
+{
+  "version": "1.0.0",
+  "category": "data-access",
+  "patterns": [
+    {
+      "id": "380ac46449458c06",
+      "subcategory": "query-patterns",
+      "name": "Query Patterns Detector",
+      "description": "Learns query patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/query-patterns",
+          "patternId": "data-access/query-patterns/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.18,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.8533333333333333,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 310,
+          "column": 46
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 376,
+          "column": 26
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 586,
+          "column": 32
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 71,
+          "column": 11
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 67,
+          "column": 37
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 74,
+          "column": 29
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 78,
+          "column": 33
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 118,
+          "column": 34
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 127,
+          "column": 30
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 128,
+          "column": 29
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 129,
+          "column": 29
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 454,
+          "column": 41
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 503,
+          "column": 190
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 75,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 75,
+          "column": 25
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 32,
+          "column": 47
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 35,
+          "column": 42
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 41,
+          "column": 35
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:21.162Z",
+        "approvedAt": "2026-02-04T07:49:21.162Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "f605d9e13d702da1",
+      "subcategory": "query-patterns",
+      "name": "Query Patterns Detector",
+      "description": "Learns query patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/query-patterns",
+          "patternId": "data-access/query-patterns/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.12,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.9116666666666666,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 472,
+          "column": 44
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 538,
+          "column": 61
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 236,
+          "column": 416
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 440,
+          "column": 102
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 644,
+          "column": 102
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 656,
+          "column": 247
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 650,
+          "column": 254
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 20,
+          "column": 91
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 182,
+          "column": 258
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 656,
+          "column": 336
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 128,
+          "column": 176
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 770,
+          "column": 300
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:21.221Z",
+        "approvedAt": "2026-02-04T07:49:21.221Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "388c82ad4885dd07",
+      "subcategory": "query-patterns",
+      "name": "Query Patterns Detector",
+      "description": "Learns query patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/query-patterns",
+          "patternId": "data-access/query-patterns/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.47,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 13,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 2,
+          "column": 60
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 3,
+          "column": 59
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 4,
+          "column": 19
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 5,
+          "column": 21
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 6,
+          "column": 16
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 7,
+          "column": 16
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 8,
+          "column": 20
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 9,
+          "column": 18
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 10,
+          "column": 21
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 11,
+          "column": 36
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 12,
+          "column": 55
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 13,
+          "column": 47
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 11,
+          "column": 10
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 1,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 2,
+          "column": 24
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 3,
+          "column": 21
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 1,
+          "column": 37
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 2,
+          "column": 37
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 3,
+          "column": 21
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 4,
+          "column": 25
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 2,
+          "column": 39
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 3,
+          "column": 20
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 4,
+          "column": 21
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 5,
+          "column": 25
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 2,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 2,
+          "column": 42
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 3,
+          "column": 81
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 4,
+          "column": 34
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 5,
+          "column": 22
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 2,
+          "column": 28
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 3,
+          "column": 69
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 4,
+          "column": 56
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 5,
+          "column": 40
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 6,
+          "column": 24
+        },
+        {
+          "file": "src\\components\\ui\\Toolbar.tsx",
+          "line": 1,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\ui\\Toolbar.tsx",
+          "line": 2,
+          "column": 17
+        },
+        {
+          "file": "src\\index.tsx",
+          "line": 1,
+          "column": 14
+        },
+        {
+          "file": "src\\index.tsx",
+          "line": 2,
+          "column": 17
+        },
+        {
+          "file": "src\\index.tsx",
+          "line": 3,
+          "column": 12
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 2,
+          "column": 22
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 2,
+          "column": 22
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 40,
+          "column": 41
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 248,
+          "column": 137
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 512,
+          "column": 224
+        },
+        {
+          "file": "vite.config.ts",
+          "line": 1,
+          "column": 13
+        },
+        {
+          "file": "vite.config.ts",
+          "line": 2,
+          "column": 34
+        },
+        {
+          "file": "vite.config.ts",
+          "line": 3,
+          "column": 14
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:21.287Z",
+        "approvedAt": "2026-02-04T07:49:21.287Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "7ef3857fd38bbe9d",
+      "subcategory": "query-patterns",
+      "name": "Query Patterns Detector",
+      "description": "Learns query patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/query-patterns",
+          "patternId": "data-access/query-patterns/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.22,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 238,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 257,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 287,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 287,
+          "column": 21
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 322,
+          "column": 21
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 345,
+          "column": 5
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 361,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 416,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 126,
+          "column": 18
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 141,
+          "column": 25
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 177,
+          "column": 19
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 202,
+          "column": 25
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 207,
+          "column": 23
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 272,
+          "column": 29
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 307,
+          "column": 27
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 478,
+          "column": 30
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 510,
+          "column": 37
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 511,
+          "column": 40
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 552,
+          "column": 29
+        },
+        {
+          "file": "src\\index.tsx",
+          "line": 5,
+          "column": 30
+        },
+        {
+          "file": "src\\utils\\groq.ts",
+          "line": 18,
+          "column": 26
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:21.351Z",
+        "approvedAt": "2026-02-04T07:49:21.351Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "cf8ac9567312918e",
+      "subcategory": "query-patterns",
+      "name": "Query Patterns Detector",
+      "description": "Learns query patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/query-patterns",
+          "patternId": "data-access/query-patterns/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.8825,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 263,
+          "column": 13
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 293,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 308,
+          "column": 13
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 60,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 140,
+          "column": 9
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 192,
+          "column": 27
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 201,
+          "column": 26
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 57,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 57,
+          "column": 14
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 84,
+          "column": 5
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:21.417Z",
+        "approvedAt": "2026-02-04T07:49:21.417Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "586da6f7da0aa31a",
+      "subcategory": "dto-patterns",
+      "name": "DTO Patterns Detector",
+      "description": "Learns Data Transfer Object patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/dto-patterns",
+          "patternId": "data-access/dto-patterns/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.12,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.8533333333333333,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 11,
+          "column": 48
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 11,
+          "column": 53
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 6,
+          "column": 40
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 6,
+          "column": 45
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 39,
+          "column": 30
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 40,
+          "column": 49
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:21.478Z",
+        "approvedAt": "2026-02-04T07:49:21.478Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "24218e1a668e17fa",
+      "subcategory": "query-access",
+      "name": "Query Access Detector",
+      "description": "Detects data access points in code (ORM queries, raw SQL)",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/boundaries/query-access",
+          "patternId": "data-access/boundaries/query-access/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.05,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 310,
+          "column": 46
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 376,
+          "column": 26
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 586,
+          "column": 32
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 75,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 75,
+          "column": 25
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:21.537Z",
+        "approvedAt": "2026-02-04T07:49:21.537Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "9526dc3cebc68da3",
+      "subcategory": "query-access",
+      "name": "Query Access Detector",
+      "description": "Detects data access points in code (ORM queries, raw SQL)",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/boundaries/query-access",
+          "patternId": "data-access/boundaries/query-access/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 238,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 257,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 287,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 287,
+          "column": 21
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 322,
+          "column": 21
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 345,
+          "column": 5
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 361,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 416,
+          "column": 9
+        },
+        {
+          "file": "src\\utils\\groq.ts",
+          "line": 18,
+          "column": 26
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:21.596Z",
+        "approvedAt": "2026-02-04T07:49:21.596Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "48fd27e3d5d49a92",
+      "subcategory": "query-access",
+      "name": "Query Access Detector",
+      "description": "Detects data access points in code (ORM queries, raw SQL)",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/boundaries/query-access",
+          "patternId": "data-access/boundaries/query-access/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.11,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 263,
+          "column": 13
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 293,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 308,
+          "column": 13
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 192,
+          "column": 27
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 201,
+          "column": 26
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 57,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 57,
+          "column": 14
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 84,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 764,
+          "column": 29
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:21.656Z",
+        "approvedAt": "2026-02-04T07:49:21.656Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "3e14884ba59527f3",
+      "subcategory": "connection-pooling",
+      "name": "Connection Pooling Detector",
+      "description": "Learns connection pooling patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/connection-pooling",
+          "patternId": "data-access/connection-pooling/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\index.tsx",
+          "line": 2,
+          "column": 33
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:21.715Z",
+        "approvedAt": "2026-02-04T07:49:21.715Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "a726df5b94d78800",
+      "subcategory": "orm-model",
+      "name": "ORM Model Detector",
+      "description": "Detects ORM model/entity definitions to extract table mappings",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/boundaries/orm-model",
+          "patternId": "data-access/boundaries/orm-model/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.03,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 6,
+          "column": 7
+        },
+        {
+          "file": "src\\utils\\groq.ts",
+          "line": 25,
+          "column": 7
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:21.773Z",
+        "approvedAt": "2026-02-04T07:49:21.773Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "081f8433e3130ed0",
+      "subcategory": "query-patterns",
+      "name": "Query Patterns Detector",
+      "description": "Learns query patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/query-patterns",
+          "patternId": "data-access/query-patterns/function_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 228,
+          "column": 17
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:21.833Z",
+        "approvedAt": "2026-02-04T07:49:21.833Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "5ff189717c50405d",
+      "subcategory": "n-plus-one",
+      "name": "N+1 Query Detector",
+      "description": "Learns N+1 query patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/n-plus-one",
+          "patternId": "data-access/n-plus-one/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.8533333333333333,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 764,
+          "column": 29
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:21.891Z",
+        "approvedAt": "2026-02-04T07:49:21.891Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "f6d3b039a691ee00",
+      "subcategory": "n-plus-one",
+      "name": "N+1 Query Detector",
+      "description": "Learns N+1 query patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/n-plus-one",
+          "patternId": "data-access/n-plus-one/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.8533333333333333,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 128,
+          "column": 39
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 128,
+          "column": 234
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:21.950Z",
+        "approvedAt": "2026-02-04T07:49:21.950Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "edde03988de64304",
+      "subcategory": "n-plus-one",
+      "name": "N+1 Query Detector",
+      "description": "Learns N+1 query patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/n-plus-one",
+          "patternId": "data-access/n-plus-one/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\utils\\groq.ts",
+          "line": 18,
+          "column": 26
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:22.010Z",
+        "approvedAt": "2026-02-04T07:49:22.010Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "478cc55a0cce3abb",
+      "subcategory": "sensitive-field",
+      "name": "Sensitive Field Detector",
+      "description": "Auto-detects potentially sensitive fields/columns in data models",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/boundaries/sensitive-field",
+          "patternId": "data-access/boundaries/sensitive-field/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "vite.config.ts",
+          "line": 14,
+          "column": 22
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:22.131Z",
+        "approvedAt": "2026-02-04T07:49:22.131Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-02-04T07:49:27.650Z",
+  "checksum": "b7aba85c85dff476"
+}

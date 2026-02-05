@@ -1,0 +1,638 @@
+{
+  "version": "1.0.0",
+  "category": "security",
+  "patterns": [
+    {
+      "id": "6ab988fd53b7aa6c",
+      "subcategory": "input-sanitization",
+      "name": "Input Sanitization Detector",
+      "description": "Learns input sanitization patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "security/input-sanitization",
+          "patternId": "security/input-sanitization/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.07,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 147,
+          "column": 34
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 155,
+          "column": 34
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 180,
+          "column": 45
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 210,
+          "column": 49
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 360,
+          "column": 30
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 480,
+          "column": 53
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 185,
+          "column": 45
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:23.217Z",
+        "approvedAt": "2026-02-04T07:49:23.217Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "54bebf9c1dfe01f0",
+      "subcategory": "secret-management",
+      "name": "Secret Management Detector",
+      "description": "Learns secret management patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "security/secret-management",
+          "patternId": "security/secret-management/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.15,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 233,
+          "column": 32
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 233,
+          "column": 37
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 555,
+          "column": 17
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 12,
+          "column": 22
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 12,
+          "column": 27
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 111,
+          "column": 15
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 140,
+          "column": 62
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 141,
+          "column": 56
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 142,
+          "column": 56
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 144,
+          "column": 68
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 187,
+          "column": 23
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 39,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 39,
+          "column": 17
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 66,
+          "column": 5
+        },
+        {
+          "file": "vite.config.ts",
+          "line": 6,
+          "column": 11
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:23.298Z",
+        "approvedAt": "2026-02-04T07:49:23.298Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "d2e3cd18cd88bd25",
+      "subcategory": "secret-management",
+      "name": "Secret Management Detector",
+      "description": "Learns secret management patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "security/secret-management",
+          "patternId": "security/secret-management/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.05,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 234,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 243,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 259,
+          "column": 14
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 212,
+          "column": 171
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 692,
+          "column": 187
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:23.394Z",
+        "approvedAt": "2026-02-04T07:49:23.394Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "b915bec446588d22",
+      "subcategory": "rate-limiting",
+      "name": "Rate Limiting Detector",
+      "description": "Learns rate limiting patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "security/rate-limiting",
+          "patternId": "security/rate-limiting/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.03,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 161,
+          "column": 34
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 261,
+          "column": 74
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 57,
+          "column": 9
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:23.464Z",
+        "approvedAt": "2026-02-04T07:49:23.464Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "15a1c06f889556d3",
+      "subcategory": "input-sanitization",
+      "name": "Input Sanitization Detector",
+      "description": "Learns input sanitization patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "security/input-sanitization",
+          "patternId": "security/input-sanitization/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 94,
+          "column": 9
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:23.529Z",
+        "approvedAt": "2026-02-04T07:49:23.529Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "d20c398c0c939c49",
+      "subcategory": "secret-management",
+      "name": "Secret Management Detector",
+      "description": "Learns secret management patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "security/secret-management",
+          "patternId": "security/secret-management/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 146,
+          "column": 20
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 146,
+          "column": 33
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 159,
+          "column": 61
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 159,
+          "column": 68
+        },
+        {
+          "file": "src\\utils\\groq.ts",
+          "line": 1,
+          "column": 34
+        },
+        {
+          "file": "vite.config.ts",
+          "line": 14,
+          "column": 22
+        },
+        {
+          "file": "vite.config.ts",
+          "line": 14,
+          "column": 18
+        },
+        {
+          "file": "vite.config.ts",
+          "line": 14,
+          "column": 47
+        },
+        {
+          "file": "vite.config.ts",
+          "line": 15,
+          "column": 18
+        },
+        {
+          "file": "vite.config.ts",
+          "line": 15,
+          "column": 54
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:23.594Z",
+        "approvedAt": "2026-02-04T07:49:23.594Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "0f1b6e067b157708",
+      "subcategory": "csrf-protection",
+      "name": "CSRF Protection Detector",
+      "description": "Learns CSRF protection patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "security/csrf-protection",
+          "patternId": "security/csrf-protection/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.2,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.9116666666666666,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 15,
+          "column": 3
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 53,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 61,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 69,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 77,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 85,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 93,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 101,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 109,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 117,
+          "column": 5
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:23.658Z",
+        "approvedAt": "2026-02-04T07:49:23.658Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "96e0995a241d6e5a",
+      "subcategory": "csrf-protection",
+      "name": "CSRF Protection Detector",
+      "description": "Learns CSRF protection patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "security/csrf-protection",
+          "patternId": "security/csrf-protection/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.9116666666666666,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 39,
+          "column": 11
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:23.724Z",
+        "approvedAt": "2026-02-04T07:49:23.724Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "11c7fb22acfddc0a",
+      "subcategory": "csp-headers",
+      "name": "CSP Headers Detector",
+      "description": "Learns Content Security Policy header patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "security/csp-headers",
+          "patternId": "security/csp-headers/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.17,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 8,
+          "column": 3
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 9,
+          "column": 3
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 26,
+          "column": 3
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 5,
+          "column": 3
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "file": "src\\utils\\groq.ts",
+          "line": 5,
+          "column": 9
+        },
+        {
+          "file": "src\\utils\\groq.ts",
+          "line": 29,
+          "column": 11
+        },
+        {
+          "file": "src\\utils\\groq.ts",
+          "line": 49,
+          "column": 9
+        },
+        {
+          "file": "src\\utils\\groq.ts",
+          "line": 20,
+          "column": 5
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:23.787Z",
+        "approvedAt": "2026-02-04T07:49:23.787Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "cb3db24a0f02ef95",
+      "subcategory": "input-sanitization",
+      "name": "Input Sanitization Detector",
+      "description": "Learns input sanitization patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "security/input-sanitization",
+          "patternId": "security/input-sanitization/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.03,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 566,
+          "column": 111
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 728,
+          "column": 101
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 728,
+          "column": 171
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:23.854Z",
+        "approvedAt": "2026-02-04T07:49:23.854Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-02-04T07:49:27.433Z",
+  "checksum": "845f2de9cafdfb1a"
+}

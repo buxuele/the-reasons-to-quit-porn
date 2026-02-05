@@ -1,0 +1,518 @@
+{
+  "version": "1.0.0",
+  "category": "performance",
+  "patterns": [
+    {
+      "id": "f2ab350aab77b189",
+      "subcategory": "code-splitting",
+      "name": "Code Splitting Detector",
+      "description": "Learns code splitting patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/code-splitting",
+          "patternId": "performance/code-splitting/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.9,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 13,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 11,
+          "column": 1
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\ui\\Toolbar.tsx",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "file": "src\\components\\ui\\Toolbar.tsx",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "file": "src\\index.tsx",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "file": "src\\index.tsx",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "file": "src\\index.tsx",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 40,
+          "column": 1
+        },
+        {
+          "file": "src\\utils\\groq.ts",
+          "line": 1,
+          "column": 22
+        },
+        {
+          "file": "vite.config.ts",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "file": "vite.config.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "file": "vite.config.ts",
+          "line": 3,
+          "column": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "44f4a738ed75a35a",
+      "subcategory": "debounce-throttle",
+      "name": "Debounce Throttle Detector",
+      "description": "Learns debounce and throttle patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/debounce-throttle",
+          "patternId": "performance/debounce-throttle/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7755555555555556,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 24,
+          "column": 43
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "7887ee77bab1ac4a",
+      "subcategory": "debounce-throttle",
+      "name": "Debounce Throttle Detector",
+      "description": "Learns debounce and throttle patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/debounce-throttle",
+          "patternId": "performance/debounce-throttle/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.5755555555555556,
+        "level": "low"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 150,
+          "column": 31
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 157,
+          "column": 35
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "60763ca08fd3c6ae",
+      "subcategory": "debounce-throttle",
+      "name": "Debounce Throttle Detector",
+      "description": "Learns debounce and throttle patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/debounce-throttle",
+          "patternId": "performance/debounce-throttle/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7755555555555556,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 161,
+          "column": 34
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 261,
+          "column": 74
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "c914cd31a1d389b3",
+      "subcategory": "memoization",
+      "name": "Memoization Detector",
+      "description": "Learns memoization patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/memoization",
+          "patternId": "performance/memoization/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7366666666666666,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 16,
+          "column": 10
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "19afd343e3443bfb",
+      "subcategory": "memoization",
+      "name": "Memoization Detector",
+      "description": "Learns memoization patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/memoization",
+          "patternId": "performance/memoization/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7366666666666666,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 18,
+          "column": 51
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "53c97812438a217f",
+      "subcategory": "memoization",
+      "name": "Memoization Detector",
+      "description": "Learns memoization patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/memoization",
+          "patternId": "performance/memoization/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7949999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 674,
+          "column": 267
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "6e276289144fd5a2",
+      "subcategory": "lazy-loading",
+      "name": "Lazy Loading Detector",
+      "description": "Learns lazy loading patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/lazy-loading",
+          "patternId": "performance/lazy-loading/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\utils\\groq.ts",
+          "line": 4,
+          "column": 8
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-02-04T07:49:27.736Z",
+  "checksum": "cca22f22834844f8"
+}

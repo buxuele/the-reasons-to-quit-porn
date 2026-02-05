@@ -1,0 +1,28 @@
+{
+  "lastUpdated": "2026-02-04T07:50:20.448Z",
+  "patterns": {
+    "total": 285,
+    "byStatus": {
+      "discovered": 135,
+      "approved": 150,
+      "ignored": 0
+    },
+    "byCategory": {
+      "api": 6,
+      "auth": 53,
+      "security": 103,
+      "errors": 48,
+      "structural": 298,
+      "components": 470,
+      "styling": 1125,
+      "logging": 62,
+      "testing": 219,
+      "data-access": 225,
+      "config": 228,
+      "types": 980,
+      "accessibility": 86,
+      "documentation": 17,
+      "performance": 171
+    }
+  }
+}

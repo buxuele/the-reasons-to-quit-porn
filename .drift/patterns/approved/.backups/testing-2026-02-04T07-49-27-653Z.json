@@ -1,0 +1,933 @@
+{
+  "version": "1.0.0",
+  "category": "testing",
+  "patterns": [
+    {
+      "id": "589e5a70ded918e5",
+      "subcategory": "test-structure",
+      "name": "Test Structure Detector",
+      "description": "Learns test structure patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/test-structure",
+          "patternId": "testing/test-structure/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.87,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 147,
+          "column": 41
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 155,
+          "column": 41
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 310,
+          "column": 51
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 310,
+          "column": 59
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 43,
+          "column": 62
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 126,
+          "column": 61
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:22.195Z",
+        "approvedAt": "2026-02-04T07:49:22.195Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "28810557b45e8bbd",
+      "subcategory": "test-structure",
+      "name": "Test Structure Detector",
+      "description": "Learns test structure patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/test-structure",
+          "patternId": "testing/test-structure/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.31,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 148,
+          "column": 35
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 153,
+          "column": 48
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 161,
+          "column": 84
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 28,
+          "column": 96
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 81,
+          "column": 100
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 91,
+          "column": 42
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 98,
+          "column": 41
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 182,
+          "column": 50
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 214,
+          "column": 140
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 225,
+          "column": 36
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 177
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 177
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 128,
+          "column": 221
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 128,
+          "column": 240
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 308,
+          "column": 39
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 308,
+          "column": 58
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 326,
+          "column": 120
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 404,
+          "column": 342
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 434,
+          "column": 156
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 506,
+          "column": 49
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 506,
+          "column": 74
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 542,
+          "column": 68
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 542,
+          "column": 76
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 542,
+          "column": 122
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 572,
+          "column": 98
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 656,
+          "column": 252
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 656,
+          "column": 283
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 692,
+          "column": 238
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 728,
+          "column": 217
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 740,
+          "column": 231
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 770,
+          "column": 20
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:22.260Z",
+        "approvedAt": "2026-02-04T07:49:22.260Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "2fc54fc3bd07628c",
+      "subcategory": "fixture-patterns",
+      "name": "Fixture Patterns Detector",
+      "description": "Learns test fixture patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/fixture-patterns",
+          "patternId": "testing/fixture-patterns/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 11,
+          "column": 48
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 11,
+          "column": 53
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 6,
+          "column": 40
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 6,
+          "column": 45
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 39,
+          "column": 30
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 40,
+          "column": 49
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:22.329Z",
+        "approvedAt": "2026-02-04T07:49:22.329Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "69080b4bf19b715d",
+      "subcategory": "fixture-patterns",
+      "name": "Fixture Patterns Detector",
+      "description": "Learns test fixture patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/fixture-patterns",
+          "patternId": "testing/fixture-patterns/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.8533333333333333,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 235,
+          "column": 66
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 31,
+          "column": 18
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:22.397Z",
+        "approvedAt": "2026-02-04T07:49:22.397Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "8c496304f1c7797e",
+      "subcategory": "describe-naming",
+      "name": "Describe Naming Detector",
+      "description": "Learns test describe/it naming patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/describe-naming",
+          "patternId": "testing/describe-naming/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.12,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.87,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 147,
+          "column": 41
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 155,
+          "column": 41
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 310,
+          "column": 51
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 310,
+          "column": 59
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 43,
+          "column": 62
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 126,
+          "column": 61
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:22.458Z",
+        "approvedAt": "2026-02-04T07:49:22.458Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "b88299d5c0a39c90",
+      "subcategory": "describe-naming",
+      "name": "Describe Naming Detector",
+      "description": "Learns test describe/it naming patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/describe-naming",
+          "patternId": "testing/describe-naming/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.72,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 148,
+          "column": 35
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 153,
+          "column": 48
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 161,
+          "column": 84
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 28,
+          "column": 96
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 17,
+          "column": 4
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 17,
+          "column": 44
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 81,
+          "column": 100
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 91,
+          "column": 42
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 98,
+          "column": 41
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 182,
+          "column": 50
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 214,
+          "column": 140
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 225,
+          "column": 36
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 177
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 177
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 128,
+          "column": 221
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 128,
+          "column": 240
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 308,
+          "column": 39
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 308,
+          "column": 58
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 326,
+          "column": 120
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 404,
+          "column": 342
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 434,
+          "column": 156
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 506,
+          "column": 49
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 506,
+          "column": 74
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 542,
+          "column": 68
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 542,
+          "column": 76
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 542,
+          "column": 122
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 572,
+          "column": 98
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 656,
+          "column": 252
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 656,
+          "column": 283
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 692,
+          "column": 238
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 728,
+          "column": 217
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 740,
+          "column": 231
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 770,
+          "column": 20
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 110,
+          "column": 20
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 110,
+          "column": 323
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 182,
+          "column": 128
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:22.517Z",
+        "approvedAt": "2026-02-04T07:49:22.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "76bab230f0b3eb8c",
+      "subcategory": "test-structure",
+      "name": "Test Structure Detector",
+      "description": "Learns test structure patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/test-structure",
+          "patternId": "testing/test-structure/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.08,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 25,
+          "column": 50
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 80,
+          "column": 91
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 80,
+          "column": 149
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 218,
+          "column": 342
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 320,
+          "column": 118
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 350,
+          "column": 142
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 716,
+          "column": 99
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 716,
+          "column": 144
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:22.580Z",
+        "approvedAt": "2026-02-04T07:49:22.580Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "67f95a16aadc8882",
+      "subcategory": "describe-naming",
+      "name": "Describe Naming Detector",
+      "description": "Learns test describe/it naming patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/describe-naming",
+          "patternId": "testing/describe-naming/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.16,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 25,
+          "column": 50
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 80,
+          "column": 91
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 80,
+          "column": 149
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 218,
+          "column": 342
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 320,
+          "column": 118
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 350,
+          "column": 142
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 716,
+          "column": 99
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 716,
+          "column": 144
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:22.642Z",
+        "approvedAt": "2026-02-04T07:49:22.642Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "e9381e1482a0e0f8",
+      "subcategory": "test-structure",
+      "name": "Test Structure Detector",
+      "description": "Learns test structure patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/test-structure",
+          "patternId": "testing/test-structure/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.08,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 16,
+          "column": 32
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 182,
+          "column": 89
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 182,
+          "column": 151
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 236,
+          "column": 192
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 368,
+          "column": 43
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 368,
+          "column": 145
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 374,
+          "column": 80
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 374,
+          "column": 111
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:22.703Z",
+        "approvedAt": "2026-02-04T07:49:22.703Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "61aaeb57dc4d93e6",
+      "subcategory": "describe-naming",
+      "name": "Describe Naming Detector",
+      "description": "Learns test describe/it naming patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/describe-naming",
+          "patternId": "testing/describe-naming/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.24,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.8533333333333333,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 16,
+          "column": 32
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 182,
+          "column": 89
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 182,
+          "column": 151
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 236,
+          "column": 192
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 368,
+          "column": 43
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 368,
+          "column": 145
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 374,
+          "column": 80
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 374,
+          "column": 111
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 56,
+          "column": 112
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 404,
+          "column": 262
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 530,
+          "column": 173
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 674,
+          "column": 141
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:22.764Z",
+        "approvedAt": "2026-02-04T07:49:22.764Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-02-04T07:49:27.581Z",
+  "checksum": "ab6d84e820df9fc1"
+}

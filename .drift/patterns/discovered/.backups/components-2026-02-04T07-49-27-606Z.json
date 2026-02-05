@@ -1,0 +1,1393 @@
+{
+  "version": "1.0.0",
+  "category": "components",
+  "patterns": [
+    {
+      "id": "c859c1a339c4825d",
+      "subcategory": "component-structure",
+      "name": "Component Structure Detector",
+      "description": "Learns component structure patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/component-structure",
+          "patternId": "components/component-structure/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.14,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.758157894736842,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 4,
+          "column": 27
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 5,
+          "column": 29
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 6,
+          "column": 24
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 7,
+          "column": 24
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 8,
+          "column": 28
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 9,
+          "column": 26
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 10,
+          "column": 29
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "5d9d99028e019700",
+      "subcategory": "component-structure",
+      "name": "Component Structure Detector",
+      "description": "Learns component structure patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/component-structure",
+          "patternId": "components/component-structure/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.25,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 67,
+          "column": 5
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 88,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 150,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 157,
+          "column": 13
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 166,
+          "column": 14
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 170,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 173,
+          "column": 5
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 183,
+          "column": 5
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 228,
+          "column": 5
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 240,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 275,
+          "column": 15
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 284,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 312,
+          "column": 19
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 319,
+          "column": 11
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 497,
+          "column": 13
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 54,
+          "column": 5
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 61,
+          "column": 5
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 65,
+          "column": 5
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 72,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 231,
+          "column": 7
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 233,
+          "column": 7
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 235,
+          "column": 7
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 237,
+          "column": 7
+        },
+        {
+          "file": "src\\utils\\groq.ts",
+          "line": 42,
+          "column": 3
+        },
+        {
+          "file": "vite.config.ts",
+          "line": 7,
+          "column": 5
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "ba70c0f03bd1f5e0",
+      "subcategory": "component-structure",
+      "name": "Component Structure Detector",
+      "description": "Learns component structure patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/component-structure",
+          "patternId": "components/component-structure/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.09,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.7949999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 148,
+          "column": 46
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 441,
+          "column": 69
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 446,
+          "column": 43
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 450,
+          "column": 44
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 508,
+          "column": 25
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 543,
+          "column": 24
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 24,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 23,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 40,
+          "column": 30
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "c2bfff870930ae90",
+      "subcategory": "duplicate-detection",
+      "name": "Duplicate Detection Detector",
+      "description": "Learns duplicate component patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/duplicate-detection",
+          "patternId": "components/duplicate-detection/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.14,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7393181818181818,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 4,
+          "column": 27
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 5,
+          "column": 29
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 6,
+          "column": 24
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 7,
+          "column": 24
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 8,
+          "column": 28
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 9,
+          "column": 26
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 10,
+          "column": 29
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "401cdcd3db242922",
+      "subcategory": "duplicate-detection",
+      "name": "Duplicate Detection Detector",
+      "description": "Learns duplicate component patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/duplicate-detection",
+          "patternId": "components/duplicate-detection/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.33,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 6,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 67,
+          "column": 5
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 88,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 150,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 157,
+          "column": 13
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 166,
+          "column": 14
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 170,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 173,
+          "column": 5
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 183,
+          "column": 5
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 228,
+          "column": 5
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 240,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 275,
+          "column": 15
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 284,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 312,
+          "column": 19
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 319,
+          "column": 11
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 497,
+          "column": 13
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 54,
+          "column": 5
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 61,
+          "column": 5
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 65,
+          "column": 5
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 72,
+          "column": 5
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 47,
+          "column": 30
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 231,
+          "column": 7
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 233,
+          "column": 7
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 235,
+          "column": 7
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 237,
+          "column": 7
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 228,
+          "column": 8
+        },
+        {
+          "file": "src\\utils\\groq.ts",
+          "line": 42,
+          "column": 3
+        },
+        {
+          "file": "src\\utils\\groq.ts",
+          "line": 4,
+          "column": 14
+        },
+        {
+          "file": "src\\utils\\groq.ts",
+          "line": 45,
+          "column": 8
+        },
+        {
+          "file": "vite.config.ts",
+          "line": 7,
+          "column": 5
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "6a7eaee2f1e4d8c2",
+      "subcategory": "near-duplicate",
+      "name": "Near Duplicate Detector",
+      "description": "Learns near-duplicate component patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/near-duplicate",
+          "patternId": "components/near-duplicate/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.14,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.758157894736842,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 4,
+          "column": 27
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 5,
+          "column": 29
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 6,
+          "column": 24
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 7,
+          "column": 24
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 8,
+          "column": 28
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 9,
+          "column": 26
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 10,
+          "column": 29
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "d16bcdcaa70236c5",
+      "subcategory": "near-duplicate",
+      "name": "Near Duplicate Detector",
+      "description": "Learns near-duplicate component patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/near-duplicate",
+          "patternId": "components/near-duplicate/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.25,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 67,
+          "column": 5
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 88,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 150,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 157,
+          "column": 13
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 166,
+          "column": 14
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 170,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 173,
+          "column": 5
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 183,
+          "column": 5
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 228,
+          "column": 5
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 240,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 275,
+          "column": 15
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 284,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 312,
+          "column": 19
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 319,
+          "column": 11
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 497,
+          "column": 13
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 54,
+          "column": 5
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 61,
+          "column": 5
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 65,
+          "column": 5
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 72,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 231,
+          "column": 7
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 233,
+          "column": 7
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 235,
+          "column": 7
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 237,
+          "column": 7
+        },
+        {
+          "file": "src\\utils\\groq.ts",
+          "line": 42,
+          "column": 3
+        },
+        {
+          "file": "vite.config.ts",
+          "line": 7,
+          "column": 5
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "e7095ce992c133ae",
+      "subcategory": "near-duplicate",
+      "name": "Near Duplicate Detector",
+      "description": "Learns near-duplicate component patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/near-duplicate",
+          "patternId": "components/near-duplicate/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.09,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.7949999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 148,
+          "column": 46
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 441,
+          "column": 69
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 446,
+          "column": 43
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 450,
+          "column": 44
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 508,
+          "column": 25
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 543,
+          "column": 24
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 24,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 23,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 40,
+          "column": 30
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "0898d8829750b900",
+      "subcategory": "state-patterns",
+      "name": "State Patterns Detector",
+      "description": "Learns state management patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/state-patterns",
+          "patternId": "components/state-patterns/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.09,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.6299999999999999,
+        "level": "low"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 30,
+          "column": 33
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 37,
+          "column": 35
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 38,
+          "column": 35
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 42,
+          "column": 41
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 43,
+          "column": 45
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 45,
+          "column": 43
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 32,
+          "column": 45
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 34,
+          "column": 41
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 35,
+          "column": 43
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "4bbd307c8e2d54da",
+      "subcategory": "state-patterns",
+      "name": "State Patterns Detector",
+      "description": "Learns state management patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/state-patterns",
+          "patternId": "components/state-patterns/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.07,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.83,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 31,
+          "column": 43
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 32,
+          "column": 47
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 39,
+          "column": 45
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 16,
+          "column": 27
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 26,
+          "column": 37
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 31,
+          "column": 41
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 33,
+          "column": 39
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "ea3e0bcd7456b038",
+      "subcategory": "ref-forwarding",
+      "name": "Ref Forwarding Detector",
+      "description": "Learns ref forwarding patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/ref-forwarding",
+          "patternId": "components/ref-forwarding/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.03,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.7949999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 2,
+          "column": 38
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 1,
+          "column": 28
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 2,
+          "column": 27
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "5ddd78e008ba0bcd",
+      "subcategory": "ref-forwarding",
+      "name": "Ref Forwarding Detector",
+      "description": "Learns ref forwarding patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/ref-forwarding",
+          "patternId": "components/ref-forwarding/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.595,
+        "level": "low"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 57,
+          "column": 28
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 17,
+          "column": 19
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "3e6f24982aba3260",
+      "subcategory": "modal-patterns",
+      "name": "Modal Patterns Detector",
+      "description": "Learns modal/dialog patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/modal-patterns",
+          "patternId": "components/modal-patterns/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.03,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.8338888888888889,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 8,
+          "column": 39
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 9,
+          "column": 37
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 10,
+          "column": 40
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "a27b1b62ec65419d",
+      "subcategory": "modal-patterns",
+      "name": "Modal Patterns Detector",
+      "description": "Learns modal/dialog patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/modal-patterns",
+          "patternId": "components/modal-patterns/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.23,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.6824999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 579,
+          "column": 22
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 597,
+          "column": 20
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 587,
+          "column": 21
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 609,
+          "column": 17
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 47,
+          "column": 22
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 85,
+          "column": 24
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 16,
+          "column": 99
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 28,
+          "column": 39
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 29,
+          "column": 39
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 33,
+          "column": 44
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 34,
+          "column": 44
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 36,
+          "column": 7
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 15,
+          "column": 87
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 30,
+          "column": 30
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 48,
+          "column": 30
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 15,
+          "column": 79
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 29,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 97,
+          "column": 26
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 27,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 247,
+          "column": 22
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 212,
+          "column": 22
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "5b337f7300915c15",
+      "subcategory": "ref-forwarding",
+      "name": "Ref Forwarding Detector",
+      "description": "Learns ref forwarding patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/ref-forwarding",
+          "patternId": "components/ref-forwarding/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7949999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 42,
+          "column": 7
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "948812ffdb0d5030",
+      "subcategory": "state-patterns",
+      "name": "State Patterns Detector",
+      "description": "Learns state management patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/state-patterns",
+          "patternId": "components/state-patterns/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7949999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 17,
+          "column": 24
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "d187e48f6fb238b0",
+      "subcategory": "ref-forwarding",
+      "name": "Ref Forwarding Detector",
+      "description": "Learns ref forwarding patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/ref-forwarding",
+          "patternId": "components/ref-forwarding/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7949999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 32,
+          "column": 25
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "d85d63eed3ede95d",
+      "subcategory": "props-patterns",
+      "name": "Props Patterns Detector",
+      "description": "Learns props patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/props-patterns",
+          "patternId": "components/props-patterns/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 153,
+          "column": 18
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-02-04T07:49:27.532Z",
+  "checksum": "efb381d832b2348a"
+}

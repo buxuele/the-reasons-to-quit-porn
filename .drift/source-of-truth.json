@@ -1,0 +1,86 @@
+{
+  "version": "0.9.48",
+  "schemaVersion": "2.0.0",
+  "createdAt": "2026-02-04T07:50:20.448Z",
+  "updatedAt": "2026-02-04T07:50:20.451Z",
+  "project": {
+    "id": "566d5a50-94bb-46e2-bae3-3346bd407db6",
+    "name": "the-reasons-to-quit-porn",
+    "rootPath": "D:\\2026\\the-reasons-to-quit-porn"
+  },
+  "baseline": {
+    "scanId": "476732be",
+    "scannedAt": "2026-02-04T07:50:20.448Z",
+    "fileCount": 16,
+    "patternCount": 285,
+    "approvedCount": 150,
+    "categories": {
+      "api": 6,
+      "auth": 53,
+      "security": 103,
+      "errors": 48,
+      "structural": 298,
+      "components": 470,
+      "styling": 1125,
+      "logging": 62,
+      "testing": 219,
+      "data-access": 225,
+      "config": 228,
+      "types": 980,
+      "accessibility": 86,
+      "documentation": 17,
+      "performance": 171
+    },
+    "checksum": "aeb0ab5696978411"
+  },
+  "features": {
+    "callGraph": {
+      "enabled": true,
+      "builtAt": "2026-02-04T07:49:45.935Z",
+      "stats": {
+        "functions": 3,
+        "callSites": 14,
+        "resolvedCalls": 0,
+        "entryPoints": 3,
+        "dataAccessors": 1,
+        "filesProcessed": 15
+      }
+    },
+    "testTopology": {
+      "enabled": false
+    },
+    "coupling": {
+      "enabled": false
+    },
+    "dna": {
+      "enabled": true,
+      "builtAt": "2026-02-04T07:50:12.016Z",
+      "stats": {
+        "genes": 10,
+        "mutations": 3,
+        "healthScore": 65,
+        "filesAnalyzed": 12,
+        "componentFiles": 7,
+        "backendFiles": 5
+      }
+    },
+    "memory": {
+      "enabled": true,
+      "builtAt": "2026-02-04T07:50:20.444Z",
+      "stats": {
+        "initialized": 1
+      }
+    }
+  },
+  "settings": {
+    "autoApproveThreshold": 0.85,
+    "autoApproveEnabled": true
+  },
+  "history": [
+    {
+      "action": "setup_complete",
+      "timestamp": "2026-02-04T07:50:20.448Z",
+      "details": "Initial setup: 285 patterns, 150 approved"
+    }
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "version": "1.0.0",
+  "category": "logging",
+  "patterns": [
+    {
+      "id": "7c45a0b86f8627f6",
+      "subcategory": "context-fields",
+      "name": "Context Fields Detector",
+      "description": "Learns logging context field patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/context-fields",
+          "patternId": "logging/context-fields/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.21,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.5999999999999999,
+        "level": "low"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 42,
+          "column": 10
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 360,
+          "column": 51
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 369,
+          "column": 26
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 376,
+          "column": 45
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 503,
+          "column": 58
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 571,
+          "column": 10
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 572,
+          "column": 12
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 573,
+          "column": 16
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 574,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 82,
+          "column": 16
+        },
+        {
+          "file": "src\\utils\\groq.ts",
+          "line": 42,
+          "column": 10
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "2bfdefd0c8bd55bb",
+      "subcategory": "context-fields",
+      "name": "Context Fields Detector",
+      "description": "Learns logging context field patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/context-fields",
+          "patternId": "logging/context-fields/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.12,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.7999999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 72,
+          "column": 32
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 359,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 368,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 375,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 446,
+          "column": 13
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 235,
+          "column": 66
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 31,
+          "column": 18
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "2317067240f2a33c",
+      "subcategory": "context-fields",
+      "name": "Context Fields Detector",
+      "description": "Learns logging context field patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/context-fields",
+          "patternId": "logging/context-fields/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.05,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.7949999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 16,
+          "column": 7
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 16,
+          "column": 29
+        },
+        {
+          "file": "src\\utils\\groq.ts",
+          "line": 41,
+          "column": 9
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "d56a0f6db4425b01",
+      "subcategory": "context-fields",
+      "name": "Context Fields Detector",
+      "description": "Learns logging context field patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/context-fields",
+          "patternId": "logging/context-fields/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.76,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 12,
+          "column": 10
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 22,
+          "column": 18
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "1673278007f4f640",
+      "subcategory": "health-checks",
+      "name": "Health Checks Detector",
+      "description": "Learns health check patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/health-checks",
+          "patternId": "logging/health-checks/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7949999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 440,
+          "column": 79
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "e40ad19eb9ace5ee",
+      "subcategory": "health-checks",
+      "name": "Health Checks Detector",
+      "description": "Learns health check patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/health-checks",
+          "patternId": "logging/health-checks/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7949999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 626,
+          "column": 130
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-02-04T07:49:27.547Z",
+  "checksum": "e04093fc304ebda7"
+}

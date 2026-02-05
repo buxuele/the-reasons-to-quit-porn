@@ -1,0 +1,439 @@
+{
+  "version": "1.0.0",
+  "category": "structural",
+  "patterns": [
+    {
+      "id": "01290db6e8d4da01",
+      "subcategory": "file-naming",
+      "name": "File Naming Detector",
+      "description": "Learns file naming convention patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "structural/file-naming",
+          "patternId": "structural/file-naming/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 168,
+          "column": 78
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 746,
+          "column": 282
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:17.937Z",
+        "approvedAt": "2026-02-04T07:49:17.937Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "e8f184ef068f8ee4",
+      "subcategory": "directory-structure",
+      "name": "Directory Structure Detector",
+      "description": "Learns directory structure patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "structural/directory-structure",
+          "patternId": "structural/directory-structure/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.28,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 8,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 11,
+          "column": 44
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 12,
+          "column": 63
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 13,
+          "column": 55
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 4,
+          "column": 27
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 5,
+          "column": 29
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 6,
+          "column": 24
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 7,
+          "column": 24
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 8,
+          "column": 28
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 9,
+          "column": 26
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 10,
+          "column": 29
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 12,
+          "column": 67
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 3,
+          "column": 33
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 3,
+          "column": 37
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 3,
+          "column": 33
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 4,
+          "column": 37
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 3,
+          "column": 37
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 4,
+          "column": 33
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 5,
+          "column": 37
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 4,
+          "column": 37
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 4,
+          "column": 46
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 5,
+          "column": 34
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 4,
+          "column": 50
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 4,
+          "column": 68
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 5,
+          "column": 52
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 6,
+          "column": 36
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 4,
+          "column": 72
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 2,
+          "column": 30
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 2,
+          "column": 31
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:17.993Z",
+        "approvedAt": "2026-02-04T07:49:17.993Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "a5ce33c400bc9588",
+      "subcategory": "co-location",
+      "name": "Co-Location Detector",
+      "description": "Learns co-location patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "structural/co-location",
+          "patternId": "structural/co-location/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.09,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 473,
+          "column": 19
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 44,
+          "column": 7
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 15,
+          "column": 9
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 23,
+          "column": 9
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 31,
+          "column": 142
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 27,
+          "column": 9
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 88,
+          "column": 7
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 121,
+          "column": 11
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 686,
+          "column": 28
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:18.044Z",
+        "approvedAt": "2026-02-04T07:49:18.044Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "6549d81a2455c667",
+      "subcategory": "co-location",
+      "name": "Co-Location Detector",
+      "description": "Learns co-location patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "structural/co-location",
+          "patternId": "structural/co-location/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.08,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 8,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 12,
+          "column": 67
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 3,
+          "column": 37
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 3,
+          "column": 37
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 4,
+          "column": 37
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 4,
+          "column": 50
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 4,
+          "column": 72
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 2,
+          "column": 30
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 2,
+          "column": 31
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:18.132Z",
+        "approvedAt": "2026-02-04T07:49:18.132Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "141d1b3fa7bc4be3",
+      "subcategory": "barrel-exports",
+      "name": "Barrel Exports Detector",
+      "description": "Learns barrel export patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "structural/barrel-exports",
+          "patternId": "structural/barrel-exports/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.9116666666666666,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 473,
+          "column": 19
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:18.214Z",
+        "approvedAt": "2026-02-04T07:49:18.214Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "13a007cc310c3e77",
+      "subcategory": "directory-structure",
+      "name": "Directory Structure Detector",
+      "description": "Learns directory structure patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "structural/directory-structure",
+          "patternId": "structural/directory-structure/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 686,
+          "column": 28
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:18.275Z",
+        "approvedAt": "2026-02-04T07:49:18.275Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-02-04T07:49:27.407Z",
+  "checksum": "0d5725228ef7c574"
+}

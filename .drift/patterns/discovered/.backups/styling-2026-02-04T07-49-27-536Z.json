@@ -1,0 +1,1138 @@
+{
+  "version": "1.0.0",
+  "category": "styling",
+  "patterns": [
+    {
+      "id": "15c5508d9b57a79d",
+      "subcategory": "design-tokens",
+      "name": "Design Tokens Detector",
+      "description": "Learns design token patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/design-tokens",
+          "patternId": "styling/design-tokens/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.26,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.595,
+        "level": "low"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 141,
+          "column": 38
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 177,
+          "column": 64
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 202,
+          "column": 38
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 207,
+          "column": 64
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 236,
+          "column": 33
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 109,
+          "column": 51
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 109,
+          "column": 69
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 111,
+          "column": 20
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 121,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 121,
+          "column": 28
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 43,
+          "column": 30
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 126,
+          "column": 27
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 134,
+          "column": 28
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "04e08499225c40ac",
+      "subcategory": "design-tokens",
+      "name": "Design Tokens Detector",
+      "description": "Learns design token patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/design-tokens",
+          "patternId": "styling/design-tokens/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.731111111111111,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 234,
+          "column": 18
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 235,
+          "column": 15
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 235,
+          "column": 60
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 31,
+          "column": 12
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 229,
+          "column": 11
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "48114eba05a55a49",
+      "subcategory": "design-tokens",
+      "name": "Design Tokens Detector",
+      "description": "Learns design token patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/design-tokens",
+          "patternId": "styling/design-tokens/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.24,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.7949999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 251,
+          "column": 98
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 272,
+          "column": 82
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 306,
+          "column": 18
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 307,
+          "column": 49
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 432,
+          "column": 127
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 478,
+          "column": 106
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 503,
+          "column": 119
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 528,
+          "column": 126
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 530,
+          "column": 123
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 533,
+          "column": 121
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 115,
+          "column": 28
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 115,
+          "column": 38
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "86d0df5ad54772e5",
+      "subcategory": "design-tokens",
+      "name": "Design Tokens Detector",
+      "description": "Learns design token patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/design-tokens",
+          "patternId": "styling/design-tokens/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.731111111111111,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 305,
+          "column": 18
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "f438560ddf82ce9c",
+      "subcategory": "color-usage",
+      "name": "Color Usage Detector",
+      "description": "Learns color usage patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/color-usage",
+          "patternId": "styling/color-usage/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.38,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.6699999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 334,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 481,
+          "column": 30
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 481,
+          "column": 64
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 547,
+          "column": 8
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 39,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 116,
+          "column": 30
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 116,
+          "column": 37
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 185,
+          "column": 85
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 187,
+          "column": 28
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 188,
+          "column": 55
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 191,
+          "column": 27
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 191,
+          "column": 41
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 192,
+          "column": 45
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 71,
+          "column": 9
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 71,
+          "column": 18
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 71,
+          "column": 39
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 199,
+          "column": 60
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 199,
+          "column": 67
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 199,
+          "column": 88
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "174e51ec78c4f98e",
+      "subcategory": "typography",
+      "name": "Typography Detector",
+      "description": "Learns typography patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/typography",
+          "patternId": "styling/typography/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.54,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.8144444444444444,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 149,
+          "column": 34
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 149,
+          "column": 54
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 156,
+          "column": 38
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 156,
+          "column": 58
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 164,
+          "column": 29
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 164,
+          "column": 46
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 165,
+          "column": 29
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 165,
+          "column": 46
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 186,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 186,
+          "column": 19
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 216,
+          "column": 13
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 216,
+          "column": 25
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 266,
+          "column": 36
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 266,
+          "column": 56
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 278,
+          "column": 18
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 278,
+          "column": 30
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 314,
+          "column": 23
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 314,
+          "column": 40
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 380,
+          "column": 26
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 387,
+          "column": 52
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 387,
+          "column": 63
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 487,
+          "column": 17
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 487,
+          "column": 32
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 586,
+          "column": 67
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 91,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 139,
+          "column": 21
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 90,
+          "column": 27
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "760af8ae09bacc56",
+      "subcategory": "typography",
+      "name": "Typography Detector",
+      "description": "Learns typography patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/typography",
+          "patternId": "styling/typography/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.36,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 6,
+        "score": 0.76,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 332,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 381,
+          "column": 27
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 190,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 336,
+          "column": 7
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 16,
+          "column": 10
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 35,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 36,
+          "column": 24
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 44,
+          "column": 18
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 141,
+          "column": 19
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 143,
+          "column": 23
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 114,
+          "column": 53
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 76,
+          "column": 9
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 76,
+          "column": 28
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 114,
+          "column": 45
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 175,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 181,
+          "column": 16
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 35,
+          "column": 3
+        },
+        {
+          "file": "src\\lib\\types.ts",
+          "line": 6,
+          "column": 3
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "2c4c4b86dc2a9a52",
+      "subcategory": "tailwind-patterns",
+      "name": "Tailwind Patterns Detector",
+      "description": "Learns Tailwind CSS patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/tailwind-patterns",
+          "patternId": "styling/tailwind-patterns/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.29,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 6,
+        "score": 0.76,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 332,
+          "column": 7
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 381,
+          "column": 27
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 16,
+          "column": 10
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 35,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 36,
+          "column": 24
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 44,
+          "column": 18
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 141,
+          "column": 19
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 143,
+          "column": 23
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 115,
+          "column": 22
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 74,
+          "column": 9
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 74,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 114,
+          "column": 17
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 69,
+          "column": 9
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 69,
+          "column": 28
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 200,
+          "column": 24
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 76,
+          "column": 9
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 76,
+          "column": 28
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 114,
+          "column": 45
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 175,
+          "column": 14
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 181,
+          "column": 16
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 190,
+          "column": 25
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 199,
+          "column": 24
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 190,
+          "column": 29
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 199,
+          "column": 28
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 35,
+          "column": 3
+        },
+        {
+          "file": "src\\lib\\types.ts",
+          "line": 6,
+          "column": 3
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "1a2ca441d4d020b0",
+      "subcategory": "color-usage",
+      "name": "Color Usage Detector",
+      "description": "Learns color usage patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/color-usage",
+          "patternId": "styling/color-usage/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.8144444444444444,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 16,
+          "column": 60
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 16,
+          "column": 88
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 131,
+          "column": 43
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "1ba7e09d6a529a5f",
+      "subcategory": "color-usage",
+      "name": "Color Usage Detector",
+      "description": "Learns color usage patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/color-usage",
+          "patternId": "styling/color-usage/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 27,
+          "column": 22
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 27,
+          "column": 37
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 27,
+          "column": 47
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "c134b8eccf2f901c",
+      "subcategory": "class-naming",
+      "name": "Class Naming Detector",
+      "description": "Learns class naming patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/class-naming",
+          "patternId": "styling/class-naming/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.7657831325301205,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 119,
+          "column": 15
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 47,
+          "column": 30
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "264c5d59b229243c",
+      "subcategory": "z-index-scale",
+      "name": "Z-Index Scale Detector",
+      "description": "Learns z-index scale patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/z-index-scale",
+          "patternId": "styling/z-index-scale/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7949999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 68,
+          "column": 9
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "b649314fb7a59c2f",
+      "subcategory": "z-index-scale",
+      "name": "Z-Index Scale Detector",
+      "description": "Learns z-index scale patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/z-index-scale",
+          "patternId": "styling/z-index-scale/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.595,
+        "level": "low"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 91,
+          "column": 9
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "dc68637b1f0118d3",
+      "subcategory": "responsive",
+      "name": "Responsive Detector",
+      "description": "Learns responsive design patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/responsive",
+          "patternId": "styling/responsive/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 116,
+          "column": 27
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 114,
+          "column": 50
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 114,
+          "column": 42
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 70,
+          "column": 23
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "a9c199c5796901bf",
+      "subcategory": "typography",
+      "name": "Typography Detector",
+      "description": "Learns typography patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/typography",
+          "patternId": "styling/typography/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7949999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\lib\\types.ts",
+          "line": 6,
+          "column": 38
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-02-04T07:49:27.454Z",
+  "checksum": "6d4da8fb14b55f0b"
+}

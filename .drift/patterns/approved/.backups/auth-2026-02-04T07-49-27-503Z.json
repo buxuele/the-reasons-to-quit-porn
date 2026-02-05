@@ -1,0 +1,446 @@
+{
+  "version": "1.0.0",
+  "category": "auth",
+  "patterns": [
+    {
+      "id": "1d51bf0e5e11e3c7",
+      "subcategory": "middleware",
+      "name": "Auth Middleware Detector",
+      "description": "Learns auth middleware patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "auth/middleware",
+          "patternId": "auth/middleware/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.07,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 147,
+          "column": 34
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 155,
+          "column": 34
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 180,
+          "column": 45
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 210,
+          "column": 49
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 360,
+          "column": 30
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 480,
+          "column": 53
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 185,
+          "column": 45
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:20.193Z",
+        "approvedAt": "2026-02-04T07:49:20.193Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "e907a3626e115bf9",
+      "subcategory": "permission-checks",
+      "name": "Permission Checks Detector",
+      "description": "Learns permission check patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "auth/permission-checks",
+          "patternId": "auth/permission-checks/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 147,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 155,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 267,
+          "column": 18
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 60,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 60,
+          "column": 14
+        },
+        {
+          "file": "src\\lib\\constants.ts",
+          "line": 87,
+          "column": 5
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:20.250Z",
+        "approvedAt": "2026-02-04T07:49:20.250Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "e67c4804b87d6a17",
+      "subcategory": "permission-checks",
+      "name": "Permission Checks Detector",
+      "description": "Learns permission check patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "auth/permission-checks",
+          "patternId": "auth/permission-checks/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.12,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 154,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 162,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 472,
+          "column": 38
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 153,
+          "column": 35
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 269,
+          "column": 29
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 214,
+          "column": 283
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 110,
+          "column": 195
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 158,
+          "column": 263
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 188,
+          "column": 83
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 470,
+          "column": 162
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 128,
+          "column": 243
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:20.325Z",
+        "approvedAt": "2026-02-04T07:49:20.325Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "13d042454dbd268a",
+      "subcategory": "audit",
+      "name": "Audit Logging Detector",
+      "description": "Learns audit logging patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "auth/audit",
+          "patternId": "auth/audit/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.12,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 21,
+          "column": 56
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 133,
+          "column": 60
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 172,
+          "column": 58
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 239,
+          "column": 63
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 248,
+          "column": 63
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 248,
+          "column": 47
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 452,
+          "column": 188
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 770,
+          "column": 316
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:20.382Z",
+        "approvedAt": "2026-02-04T07:49:20.382Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "478ca1040f1ca69f",
+      "subcategory": "middleware",
+      "name": "Auth Middleware Detector",
+      "description": "Learns auth middleware patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "auth/middleware",
+          "patternId": "auth/middleware/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 94,
+          "column": 9
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:20.438Z",
+        "approvedAt": "2026-02-04T07:49:20.438Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "5b290af0df14fd2e",
+      "subcategory": "middleware",
+      "name": "Auth Middleware Detector",
+      "description": "Learns auth middleware patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "auth/middleware",
+          "patternId": "auth/middleware/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 236,
+          "column": 242
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:20.494Z",
+        "approvedAt": "2026-02-04T07:49:20.494Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "6d8a3a39b3a4edb6",
+      "subcategory": "ownership",
+      "name": "Resource Ownership Detector",
+      "description": "Learns resource ownership patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "auth/ownership",
+          "patternId": "auth/ownership/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.03,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 572,
+          "column": 60
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 572,
+          "column": 76
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 740,
+          "column": 181
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:20.553Z",
+        "approvedAt": "2026-02-04T07:49:20.553Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "8725e417827d031c",
+      "subcategory": "permission-checks",
+      "name": "Permission Checks Detector",
+      "description": "Learns permission check patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "auth/permission-checks",
+          "patternId": "auth/permission-checks/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\utils\\groq.ts",
+          "line": 57,
+          "column": 7
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:20.610Z",
+        "approvedAt": "2026-02-04T07:49:20.610Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-02-04T07:49:27.419Z",
+  "checksum": "2110acd6224940c4"
+}

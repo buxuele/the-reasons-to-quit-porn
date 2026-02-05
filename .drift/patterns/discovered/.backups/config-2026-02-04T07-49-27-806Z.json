@@ -1,0 +1,668 @@
+{
+  "version": "1.0.0",
+  "category": "config",
+  "patterns": [
+    {
+      "id": "ef92182e19ff7a68",
+      "subcategory": "env-config",
+      "name": "Environment Config Detector",
+      "description": "Learns environment configuration patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/env-config",
+          "patternId": "config/env-config/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.48,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.7262500000000001,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 37,
+          "column": 10
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 73,
+          "column": 44
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 237,
+          "column": 43
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 237,
+          "column": 62
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 251,
+          "column": 55
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 251,
+          "column": 89
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 272,
+          "column": 73
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 307,
+          "column": 40
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 478,
+          "column": 63
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 478,
+          "column": 97
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 503,
+          "column": 23
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 503,
+          "column": 42
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 503,
+          "column": 86
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 503,
+          "column": 110
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 547,
+          "column": 29
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 20,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 61,
+          "column": 25
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 86,
+          "column": 75
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 115,
+          "column": 19
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 140,
+          "column": 43
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 141,
+          "column": 40
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 142,
+          "column": 40
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 144,
+          "column": 44
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "ca66e657973764e2",
+      "subcategory": "env-config",
+      "name": "Environment Config Detector",
+      "description": "Learns environment configuration patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/env-config",
+          "patternId": "config/env-config/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.83,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 72,
+          "column": 10
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 306,
+          "column": 9
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 427,
+          "column": 35
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 427,
+          "column": 61
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 441,
+          "column": 28
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "a83995b5946a7287",
+      "subcategory": "env-config",
+      "name": "Environment Config Detector",
+      "description": "Learns environment configuration patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/env-config",
+          "patternId": "config/env-config/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.83,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 538,
+          "column": 66
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "2b58874af6f117e3",
+      "subcategory": "required-optional",
+      "name": "Required/Optional Detector",
+      "description": "Learns required/optional configuration patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/required-optional",
+          "patternId": "config/required-optional/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.32,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 9,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 37,
+          "column": 57
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 431,
+          "column": 17
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 432,
+          "column": 41
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 432,
+          "column": 68
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 432,
+          "column": 110
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 514,
+          "column": 26
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 518,
+          "column": 35
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 617,
+          "column": 8
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 97,
+          "column": 8
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 82,
+          "column": 8
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 61,
+          "column": 8
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 39,
+          "column": 8
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 156,
+          "column": 8
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 259,
+          "column": 8
+        },
+        {
+          "file": "src\\components\\ui\\Toolbar.tsx",
+          "line": 24,
+          "column": 8
+        },
+        {
+          "file": "vite.config.ts",
+          "line": 5,
+          "column": 8
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "c9ba3cc2ce01a366",
+      "subcategory": "default-values",
+      "name": "Default Values Detector",
+      "description": "Learns default value patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/default-values",
+          "patternId": "config/default-values/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.44,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 9,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 37,
+          "column": 57
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 431,
+          "column": 17
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 432,
+          "column": 41
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 432,
+          "column": 68
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 432,
+          "column": 110
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 514,
+          "column": 26
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 518,
+          "column": 35
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 617,
+          "column": 8
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 536,
+          "column": 17
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 539,
+          "column": 57
+        },
+        {
+          "file": "src\\components\\modals\\ArticleModal.tsx",
+          "line": 97,
+          "column": 8
+        },
+        {
+          "file": "src\\components\\modals\\ContextMenu.tsx",
+          "line": 82,
+          "column": 8
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 61,
+          "column": 8
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 15,
+          "column": 48
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 16,
+          "column": 36
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 20,
+          "column": 13
+        },
+        {
+          "file": "src\\components\\modals\\EditModal.tsx",
+          "line": 21,
+          "column": 7
+        },
+        {
+          "file": "src\\components\\ui\\Background.tsx",
+          "line": 39,
+          "column": 8
+        },
+        {
+          "file": "src\\components\\ui\\FloatingCard.tsx",
+          "line": 156,
+          "column": 8
+        },
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 259,
+          "column": 8
+        },
+        {
+          "file": "src\\components\\ui\\Toolbar.tsx",
+          "line": 24,
+          "column": 8
+        },
+        {
+          "file": "vite.config.ts",
+          "line": 5,
+          "column": 8
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "807e5344dfc09d9c",
+      "subcategory": "default-values",
+      "name": "Default Values Detector",
+      "description": "Learns default value patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/default-values",
+          "patternId": "config/default-values/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.8042105263157895,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 161,
+          "column": 53
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 472,
+          "column": 87
+        },
+        {
+          "file": "src\\App.tsx",
+          "line": 527,
+          "column": 32
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "255450e0e963c061",
+      "subcategory": "feature-flags",
+      "name": "Feature Flags Detector",
+      "description": "Learns feature flag patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/feature-flags",
+          "patternId": "config/feature-flags/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.83,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 47,
+          "column": 40
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "b285908b41af8c1d",
+      "subcategory": "feature-flags",
+      "name": "Feature Flags Detector",
+      "description": "Learns feature flag patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/feature-flags",
+          "patternId": "config/feature-flags/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.03,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.83,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\components\\ui\\Sidebar.tsx",
+          "line": 213,
+          "column": 13
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 500,
+          "column": 31
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 518,
+          "column": 68
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "cfe6a47d2a8e1796",
+      "subcategory": "feature-flags",
+      "name": "Feature Flags Detector",
+      "description": "Learns feature flag patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/feature-flags",
+          "patternId": "config/feature-flags/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.03,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.8241666666666667,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 344,
+          "column": 142
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 344,
+          "column": 166
+        },
+        {
+          "file": "src\\lib\\data\\data.ts",
+          "line": 350,
+          "column": 206
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:48:19.517Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-02-04T07:49:27.731Z",
+  "checksum": "3a99d93c61ff4640"
+}

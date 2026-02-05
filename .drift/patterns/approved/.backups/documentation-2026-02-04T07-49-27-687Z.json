@@ -1,0 +1,89 @@
+{
+  "version": "1.0.0",
+  "category": "documentation",
+  "patterns": [
+    {
+      "id": "9c39cb8082c2f392",
+      "subcategory": "todo-patterns",
+      "name": "Todo Patterns Detector",
+      "description": "Learns TODO/FIXME comment patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "documentation/todo-patterns",
+          "patternId": "documentation/todo-patterns/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src\\App.tsx",
+          "line": 503,
+          "column": 141
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 56,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 64,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 72,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 80,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 88,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 96,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 104,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 112,
+          "column": 5
+        },
+        {
+          "file": "src\\lib\\data\\data-themes.ts",
+          "line": 120,
+          "column": 5
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-02-04T07:48:19.517Z",
+        "lastSeen": "2026-02-04T07:49:27.530Z",
+        "approvedAt": "2026-02-04T07:49:27.530Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-02-04T07:49:27.600Z",
+  "checksum": "2c9ee3b03093b139"
+}
