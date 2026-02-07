@@ -24,6 +24,7 @@ const FloatingCard: React.FC<FloatingCardProps> = memo(({
   onContextMenu
 }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [isRevealed, setIsRevealed] = useState(card.isRevealed || false);
   const styleClass = COLOR_MAP[card.color] || COLOR_MAP['glass'];
 
   // --- Local Pause Logic ---
@@ -127,25 +128,27 @@ const FloatingCard: React.FC<FloatingCardProps> = memo(({
           }}
           whileHover={{
             scale: 1.05,
-            y: -15, 
-            boxShadow: "0 30px 60px -12px rgba(0,0,0,0.6)", // Optimized shadow
+            boxShadow: "0 30px 60px -12px rgba(0,0,0,0.6)",
             transition: { duration: 0.3, ease: "easeOut" }
           }}
           onContextMenu={handleContextMenu}
+          onClick={() => card.text2 && setIsRevealed(!isRevealed)}
         >
-           {/* Text Content */}
-          <div className="space-y-2">
+           <div className="space-y-2">
             <p className="text-lg font-normal leading-relaxed text-left drop-shadow-md select-none">
               {card.text}
             </p>
             {card.text2 && (
-              <p className="text-base font-normal leading-relaxed text-left drop-shadow-md select-none opacity-90">
+              <div 
+                className={`relative text-lg font-normal leading-relaxed text-left drop-shadow-md select-none opacity-90 cursor-pointer ${
+                  isRevealed ? '' : 'blur-sm bg-white/20 dark:bg-black/30 rounded-lg px-3 py-2'
+                }`}
+              >
                 {card.text2}
-              </p>
+              </div>
             )}
           </div>
           
-          {/* Shine effect */}
           <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-white/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
         </motion.div>
       </motion.div>

@@ -224,6 +224,159 @@ export const READING_DATA: ThemeData[] = [
   },
 ];
 
+export const POETRY_DATA: ThemeData[] = [
+  {
+    id: 'poetry_1',
+    text: '床前明月光',
+    text2: '疑是地上霜',
+    source: '李白《静夜思》',
+  },
+  {
+    id: 'poetry_2',
+    text: '举头望明月',
+    text2: '低头思故乡',
+    source: '李白《静夜思》',
+  },
+  {
+    id: 'poetry_3',
+    text: '春眠不觉晓',
+    text2: '处处闻啼鸟',
+    source: '孟浩然《春晓》',
+  },
+  {
+    id: 'poetry_4',
+    text: '夜来风雨声',
+    text2: '花落知多少',
+    source: '孟浩然《春晓》',
+  },
+  {
+    id: 'poetry_5',
+    text: '白日依山尽',
+    text2: '黄河入海流',
+    source: '王之涣《登鹳雀楼》',
+  },
+  {
+    id: 'poetry_6',
+    text: '欲穷千里目',
+    text2: '更上一层楼',
+    source: '王之涣《登鹳雀楼》',
+  },
+  {
+    id: 'poetry_7',
+    text: '锄禾日当午',
+    text2: '汗滴禾下土',
+    source: '李绅《悯农》',
+  },
+  {
+    id: 'poetry_8',
+    text: '谁知盘中餐',
+    text2: '粒粒皆辛苦',
+    source: '李绅《悯农》',
+  },
+  {
+    id: 'poetry_9',
+    text: '慈母手中线',
+    text2: '游子身上衣',
+    source: '孟郊《游子吟》',
+  },
+  {
+    id: 'poetry_10',
+    text: '临行密密缝',
+    text2: '意恐迟迟归',
+    source: '孟郊《游子吟》',
+  },
+  {
+    id: 'poetry_11',
+    text: '谁言寸草心',
+    text2: '报得三春晖',
+    source: '孟郊《游子吟》',
+  },
+  {
+    id: 'poetry_12',
+    text: '野火烧不尽',
+    text2: '春风吹又生',
+    source: '白居易《赋得古原草送别》',
+  },
+  {
+    id: 'poetry_13',
+    text: '日出江花红胜火',
+    text2: '春来江水绿如蓝',
+    source: '白居易《忆江南》',
+  },
+  {
+    id: 'poetry_14',
+    text: '两个黄鹂鸣翠柳',
+    text2: '一行白鹭上青天',
+    source: '杜甫《绝句》',
+  },
+  {
+    id: 'poetry_15',
+    text: '窗含西岭千秋雪',
+    text2: '门泊东吴万里船',
+    source: '杜甫《绝句》',
+  },
+  {
+    id: 'poetry_16',
+    text: '好雨知时节',
+    text2: '当春乃发生',
+    source: '杜甫《春夜喜雨》',
+  },
+  {
+    id: 'poetry_17',
+    text: '随风潜入夜',
+    text2: '润物细无声',
+    source: '杜甫《春夜喜雨》',
+  },
+  {
+    id: 'poetry_18',
+    text: '千山鸟飞绝',
+    text2: '万径人踪灭',
+    source: '柳宗元《江雪》',
+  },
+  {
+    id: 'poetry_19',
+    text: '孤舟蓑笠翁',
+    text2: '独钓寒江雪',
+    source: '柳宗元《江雪》',
+  },
+  {
+    id: 'poetry_20',
+    text: '朝辞白帝彩云间',
+    text2: '千里江陵一日还',
+    source: '李白《早发白帝城》',
+  },
+  {
+    id: 'poetry_21',
+    text: '两岸猿声啼不住',
+    text2: '轻舟已过万重山',
+    source: '李白《早发白帝城》',
+  },
+  {
+    id: 'poetry_22',
+    text: '飞流直下三千尺',
+    text2: '疑是银河落九天',
+    source: '李白《望庐山瀑布》',
+  },
+  {
+    id: 'poetry_23',
+    text: '桃花潭水深千尺',
+    text2: '不及汪伦送我情',
+    source: '李白《赠汪伦》',
+  },
+  {
+    id: 'poetry_24',
+    text: '孤帆远影碧空尽',
+    text2: '唯见长江天际流',
+    source: '李白《黄鹤楼送孟浩然之广陵》',
+  },
+  {
+    id: 'poetry_25',
+    text: '劝君更尽一杯酒',
+    text2: '西出阳关无故人',
+    source: '王维《送元二使安西》',
+  },
+];
+
 // Theme data getter
 export function getThemeData(theme: ThemeType): ThemeData[] {
   switch (theme) {
@@ -233,6 +386,8 @@ export function getThemeData(theme: ThemeType): ThemeData[] {
       return QUOTES_DATA;
     case 'reading':
       return READING_DATA;
+    case 'poetry':
+      return POETRY_DATA;
     default:
       return QUIT_PORN_DATA;
   }
@@ -243,4 +398,5 @@ export const THEME_NAMES: Record<ThemeType, { zh: string; en: string }> = {
   'quit-porn': { zh: '戒色', en: 'Quit Porn' },
   'quotes': { zh: '名言', en: 'Quotes' },
   'reading': { zh: '读书', en: 'Reading' },
+  'poetry': { zh: '诗词', en: 'Poetry' },
 };

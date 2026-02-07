@@ -1,17 +1,18 @@
 
 export interface CardData {
   id: string;
-  sourceId?: string | number; // Optional ID linking back to source data
+  sourceId?: string | number;
   text: string;
-  text2?: string; // Optional second line (for translation, etc.)
+  text2?: string;
   color: string;
-  angle: number; // Position on the ring (0-360 degrees)
-  height: number; // Vertical offset percentage (-50 to 50)
-  radius: number; // Distance from center percentage
+  angle: number;
+  height: number;
+  radius: number;
   rotationX: number;
   rotationY: number;
   rotationZ: number;
   delay: number;
+  isRevealed?: boolean;
 }
 
 export interface AppSettings {
@@ -24,7 +25,7 @@ export interface AppSettings {
   theme: ThemeType; // Current theme
 }
 
-export type ThemeType = 'quit-porn' | 'reading' | 'quotes';
+export type ThemeType = 'quit-porn' | 'reading' | 'quotes' | 'poetry';
 
 export enum CardColor {
   Red = 'red',
